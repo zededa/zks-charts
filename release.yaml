@@ -3,11 +3,11 @@ elemental:
 elemental-crd:
   - 105.0.0+up1.6.4
 fleet:
-  - 105.0.0+up0.11.0-beta.2
+  - 105.0.0+up0.11.0-beta.3
 fleet-agent:
-  - 105.0.0+up0.11.0-beta.2
+  - 105.0.0+up0.11.0-beta.3
 fleet-crd:
-  - 105.0.0+up0.11.0-beta.2
+  - 105.0.0+up0.11.0-beta.3
 prometheus-federator:
   - 105.0.0-rc.1+up0.4.3-rc.1
 rancher-aks-operator:
