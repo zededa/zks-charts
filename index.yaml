@@ -4645,6 +4645,50 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
       catalog.cattle.io/release-name: longhorn
       catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 1.7.2
+    apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-10-30T17:19:21.414253553-03:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 5f395639996cad174e58ab16e12dc5536e8c4eeaa2c651271a319c70c203e7b6
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - assets/longhorn/longhorn-103.4.1+up1.7.2.tgz
+    version: 103.4.1+up1.7.2
+  - annotations:
+      catalog.cattle.io/auto-install: longhorn-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Longhorn
+      catalog.cattle.io/kube-version: '>= 1.21.0-0'
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: longhorn.io/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: longhorn
+      catalog.cattle.io/type: cluster-tool
       catalog.cattle.io/upstream-version: 1.7.1
     apiVersion: v1
     appVersion: v1.7.1
@@ -5119,6 +5163,50 @@ entries:
     urls:
     - assets/longhorn/longhorn-103.0.0+up1.3.3.tgz
     version: 103.0.0+up1.3.3
+  - annotations:
+      catalog.cattle.io/auto-install: longhorn-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Longhorn
+      catalog.cattle.io/kube-version: '>= 1.21.0-0'
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: longhorn.io/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
+      catalog.cattle.io/release-name: longhorn
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 1.7.2
+    apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-10-30T17:18:02.003432616-03:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 8fb53cd5cff05a04d52a48d6249de5ba3aa4e397402cf8e7c9f4bcf39bb9ce9a
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - assets/longhorn/longhorn-102.5.1+up1.7.2.tgz
+    version: 102.5.1+up1.7.2
   - annotations:
       catalog.cattle.io/auto-install: longhorn-crd=match
       catalog.cattle.io/certified: rancher
@@ -6920,6 +7008,21 @@ entries:
       catalog.cattle.io/namespace: longhorn-system
       catalog.cattle.io/release-name: longhorn-crd
     apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-10-30T17:19:48.989598594-03:00"
+    description: Installs the CRDs for longhorn.
+    digest: 9df2d00080c28d52171bbcc24768f5d64cf064ea7ebc19f190f900a858afef52
+    name: longhorn-crd
+    type: application
+    urls:
+    - assets/longhorn-crd/longhorn-crd-103.4.1+up1.7.2.tgz
+    version: 103.4.1+up1.7.2
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/release-name: longhorn-crd
+    apiVersion: v1
     appVersion: v1.7.1
     created: "2024-09-25T12:39:27.245973391-03:00"
     description: Installs the CRDs for longhorn.
@@ -7079,6 +7182,21 @@ entries:
     urls:
     - assets/longhorn-crd/longhorn-crd-103.0.0+up1.3.3.tgz
     version: 103.0.0+up1.3.3
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/release-name: longhorn-crd
+    apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-10-30T17:18:22.266579823-03:00"
+    description: Installs the CRDs for longhorn.
+    digest: 3e1e910cafef23c2eefb4a06b1d2b0e893579714f9cb9553350c0e739838eb45
+    name: longhorn-crd
+    type: application
+    urls:
+    - assets/longhorn-crd/longhorn-crd-102.5.1+up1.7.2.tgz
+    version: 102.5.1+up1.7.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
