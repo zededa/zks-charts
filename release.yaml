@@ -17,8 +17,8 @@ rancher-cis-benchmark:
 rancher-cis-benchmark-crd:
   - 5.6.0-rc.1
 fleet:
-  - 103.1.10+up0.9.11-rc.2
+  - 103.1.10+up0.9.11
 fleet-crd:
-  - 103.1.10+up0.9.11-rc.2
+  - 103.1.10+up0.9.11
 fleet-agent:
-  - 103.1.10+up0.9.11-rc.2
+  - 103.1.10+up0.9.11
