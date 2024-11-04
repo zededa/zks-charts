@@ -1,4 +1,2 @@
-longhorn:
-  - 102.5.1+up1.7.2
-longhorn-crd:
-  - 102.5.1+up1.7.2
+rancher-webhook:
+  - 2.0.13+up0.3.13
