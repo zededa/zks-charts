@@ -23865,7 +23865,7 @@ entries:
       catalog.cattle.io/release-name: rancher-webhook
     apiVersion: v2
     appVersion: 0.3.13
-    created: "2024-11-05T15:26:12.857242268-03:00"
+    created: "2024-11-05T15:28:57.805764578-03:00"
     dependencies:
     - condition: capi.enabled
       name: capi
