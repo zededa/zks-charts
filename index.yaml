@@ -13957,7 +13957,7 @@ entries:
       catalog.cattle.io/upstream-version: 57.0.3
     apiVersion: v2
     appVersion: v0.75.1
-    created: "2024-10-15T12:59:21.64409095-04:00"
+    created: "2024-11-07T16:54:49.979035378-04:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -14029,7 +14029,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 64c3a685ecb6ed73a02ce8ac09b23c06bdd9ce77f1ba2ba631818ccd255ebb01
+    digest: 137533943d9fcefc6edd0cc8e52a245ef1b6bacddb907e0f26697970f0c1ed03
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
@@ -14060,8 +14060,8 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - assets/rancher-monitoring/rancher-monitoring-105.1.0-rc.1+up61.3.2.tgz
-    version: 105.1.0-rc.1+up61.3.2
+    - assets/rancher-monitoring/rancher-monitoring-105.1.0+up61.3.2.tgz
+    version: 105.1.0+up61.3.2
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -16299,14 +16299,14 @@ entries:
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/release-name: rancher-monitoring-crd
     apiVersion: v2
-    created: "2024-09-20T12:25:25.865438137-04:00"
+    created: "2024-11-07T16:54:50.084128449-04:00"
     description: Installs the CRDs for rancher-monitoring.
-    digest: cc4642513a31477671e30596f82d032bbc3e549bb9e469303931e25918805e77
+    digest: 0f8dd2110d95e51457e6ad1af544b5c72a015b8b65ed61807d90531d01050e8c
     name: rancher-monitoring-crd
     type: application
     urls:
-    - assets/rancher-monitoring-crd/rancher-monitoring-crd-105.1.0-rc.1+up61.3.2.tgz
-    version: 105.1.0-rc.1+up61.3.2
+    - assets/rancher-monitoring-crd/rancher-monitoring-crd-105.1.0+up61.3.2.tgz
+    version: 105.1.0+up61.3.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
