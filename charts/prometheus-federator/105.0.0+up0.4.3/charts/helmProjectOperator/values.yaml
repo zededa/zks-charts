@@ -130,7 +130,7 @@ replicas: 1
 
 image:
   repository: rancher/prometheus-federator
-  tag: v0.4.3-rc.2
+  tag: ''
   pullPolicy: IfNotPresent
 
 helmController:
@@ -190,7 +190,7 @@ debugLevel: 0
 cleanup:
   image:
     repository: rancher/shell
-    tag: v0.3.0-rc.2
+    tag: v0.3.0
     pullPolicy: IfNotPresent
 
   ## Define which Nodes the Pods are scheduled on.
