@@ -1,14 +1,6 @@
-prometheus-federator:
-  - 104.0.2+up0.4.2
-rancher-aks-operator:
-  - 104.4.0+up1.9.4
-rancher-aks-operator-crd:
-  - 104.4.0+up1.9.4
-rancher-eks-operator:
-  - 104.4.0+up1.9.4
-rancher-eks-operator-crd:
-  - 104.4.0+up1.9.4
-rancher-gke-operator:
-  - 104.4.0+up1.9.4
-rancher-gke-operator-crd:
-  - 104.4.0+up1.9.4
+rancher-webhook:
+  - 104.0.4+up0.5.4
+rancher-cis-benchmark:
+  - 6.4.0
+rancher-cis-benchmark-crd:
+  - 6.4.0
