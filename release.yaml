@@ -1,10 +1,14 @@
-rancher-logging:
-  - 105.0.0+up4.8.0
-rancher-logging-crd:
-  - 105.0.0+up4.8.0
-rancher-monitoring:
-  - 105.0.0+up57.0.3
-  - 105.1.0+up61.3.2
-rancher-monitoring-crd:
-  - 105.0.0+up57.0.3
-  - 105.1.0+up61.3.2
+fleet:
+  - 105.0.0+up0.11.0
+fleet-agent:
+  - 105.0.0+up0.11.0
+fleet-crd:
+  - 105.0.0+up0.11.0
+prometheus-federator:
+  - 105.0.0+up0.4.3
+rancher-cis-benchmark:
+  - 105.0.0+up7.0.0
+rancher-cis-benchmark-crd:
+  - 105.0.0+up7.0.0
+rancher-webhook:
+  - 105.0.0+up0.6.1
