@@ -1,3 +1,15 @@
+fleet:
+  - 103.1.10+up0.9.11
+  - 104.1.1+up0.10.5
+  - 104.1.2+up0.10.6
+fleet-crd:
+  - 103.1.10+up0.9.11
+  - 104.1.1+up0.10.5
+  - 104.1.2+up0.10.6
+fleet-agent:
+  - 103.1.10+up0.9.11
+  - 104.1.1+up0.10.5
+  - 104.1.2+up0.10.6
 elemental:
   - 103.4.1+up1.6.5
 elemental-crd:
@@ -12,12 +24,6 @@ rancher-monitoring:
   - 104.1.3-rc.1+up57.0.3
 rancher-monitoring-crd:
   - 104.1.3-rc.1+up57.0.3
-fleet:
-  - 103.1.10+up0.9.11
-fleet-crd:
-  - 103.1.10+up0.9.11
-fleet-agent:
-  - 103.1.10+up0.9.11
 ui-plugin-operator:
   - 103.0.3+up0.2.2
 ui-plugin-operator-crd:
