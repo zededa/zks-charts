@@ -1019,6 +1019,28 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
       catalog.cattle.io/release-name: fleet
     apiVersion: v2
+    appVersion: 0.10.6
+    created: "2024-11-18T15:00:46.713483692-03:00"
+    description: Fleet Manager - GitOps at Scale
+    digest: da9fd9530ec9043aeb99f6506643d4fd53b1faf29f16e405459abb411f647dac
+    icon: https://charts.rancher.io/assets/logos/fleet.svg
+    name: fleet
+    urls:
+    - assets/fleet/fleet-104.1.2+up0.10.6.tgz
+    version: 104.1.2+up0.10.6
+  - annotations:
+      catalog.cattle.io/auto-install: fleet-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/experimental: "true"
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 1.18.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: cattle-fleet-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: clusters.fleet.cattle.io/v1alpha1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: fleet
+    apiVersion: v2
     appVersion: 0.10.5
     created: "2024-11-11T20:58:17.47336019-03:00"
     description: Fleet Manager - GitOps at Scale
@@ -1761,6 +1783,25 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
       catalog.cattle.io/release-name: fleet-agent
     apiVersion: v2
+    appVersion: 0.10.6
+    created: "2024-11-18T15:00:56.006043934-03:00"
+    description: Fleet Manager Agent - GitOps at Scale
+    digest: 2fcb090eee3beb62b13ba96ae308db881f0444a1b8bb7c18efa44c2bad9b9911
+    icon: https://charts.rancher.io/assets/logos/fleet.svg
+    name: fleet-agent
+    urls:
+    - assets/fleet-agent/fleet-agent-104.1.2+up0.10.6.tgz
+    version: 104.1.2+up0.10.6
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 1.18.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: cattle-fleet-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: fleet-agent
+    apiVersion: v2
     appVersion: 0.10.5
     created: "2024-11-11T20:58:20.605930177-03:00"
     description: Fleet Manager Agent - GitOps at Scale
@@ -2318,6 +2359,23 @@ entries:
     urls:
     - assets/fleet-crd/fleet-crd-105.0.0+up0.11.0.tgz
     version: 105.0.0+up0.11.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-fleet-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/release-name: fleet-crd
+    apiVersion: v2
+    appVersion: 0.10.6
+    created: "2024-11-18T15:00:51.291955494-03:00"
+    description: Fleet Manager CustomResourceDefinitions
+    digest: 20251cd2a9c6808abd43ffccd6543e524d021cf772cce873be1d9fe2e4e4d8d9
+    icon: https://charts.rancher.io/assets/logos/fleet.svg
+    name: fleet-crd
+    urls:
+    - assets/fleet-crd/fleet-crd-104.1.2+up0.10.6.tgz
+    version: 104.1.2+up0.10.6
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -3188,6 +3246,32 @@ entries:
     urls:
     - assets/harvester-csi-driver/harvester-csi-driver-105.0.0+up0.1.21.tgz
     version: 105.0.0+up0.1.21
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.21
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2024-11-18T15:00:59.98250617-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: 8ecf414a4135aab5bb88c34da3d870a7cb47a6864f7b6a28f6e33cf910a02dcc
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-104.0.3+up0.1.21.tgz
+    version: 104.0.3+up0.1.21
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Harvester CSI Driver
