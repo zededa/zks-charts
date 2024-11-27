@@ -1,4 +1,4 @@
 url: https://github.com/rancher/provisioning.git
-commit: 8588a720e13de3353cd2dc3c99f402e884697c84
+commit: f50a5b79be888980a8767f5e4f49e31c5f2ec263
 subdirectory: charts/capi
-version: 105.0.0
+version: 105.1.0
