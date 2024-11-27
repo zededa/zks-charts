@@ -3563,6 +3563,92 @@ entries:
       catalog.cattle.io/auto-install: longhorn-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Longhorn
+      catalog.cattle.io/kube-version: '>= 1.23.0-0'
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: longhorn.io/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: longhorn
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 1.7.2
+    apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-11-27T12:33:59.769568723-03:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: b113e32fb2c259e7772729a287cb62b85d24cdd2e1e137cd3f3dfd55aa17bb9e
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - assets/longhorn/longhorn-105.1.0+up1.7.2.tgz
+    version: 105.1.0+up1.7.2
+  - annotations:
+      catalog.cattle.io/auto-install: longhorn-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Longhorn
+      catalog.cattle.io/kube-version: '>= 1.23.0-0'
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: longhorn.io/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: longhorn
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 1.6.3
+    apiVersion: v1
+    appVersion: v1.6.3
+    created: "2024-11-27T12:33:27.051845649-03:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: f914d102b0b0dc0e422d45bbd664a18327db4f2d49436bfe5cc1c62a29dad5c8
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - assets/longhorn/longhorn-105.0.0+up1.6.3.tgz
+    version: 105.0.0+up1.6.3
+  - annotations:
+      catalog.cattle.io/auto-install: longhorn-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Longhorn
       catalog.cattle.io/kube-version: '>= 1.21.0-0'
       catalog.cattle.io/namespace: longhorn-system
       catalog.cattle.io/permits-os: linux,windows
@@ -5068,6 +5154,36 @@ entries:
       catalog.cattle.io/release-name: longhorn-crd
     apiVersion: v1
     appVersion: v1.7.2
+    created: "2024-11-27T12:34:11.088748213-03:00"
+    description: Installs the CRDs for longhorn.
+    digest: 0275645c08304471e41702164f4d08eb7484e4a5fb794fe78a43f0f750e83bc2
+    name: longhorn-crd
+    type: application
+    urls:
+    - assets/longhorn-crd/longhorn-crd-105.1.0+up1.7.2.tgz
+    version: 105.1.0+up1.7.2
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/release-name: longhorn-crd
+    apiVersion: v1
+    appVersion: v1.6.3
+    created: "2024-11-27T12:33:37.911667959-03:00"
+    description: Installs the CRDs for longhorn.
+    digest: 053ffbbfaeea5e7adb7856d2969a46292fbb43b911219d061e250b4722b5796b
+    name: longhorn-crd
+    type: application
+    urls:
+    - assets/longhorn-crd/longhorn-crd-105.0.0+up1.6.3.tgz
+    version: 105.0.0+up1.6.3
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/release-name: longhorn-crd
+    apiVersion: v1
+    appVersion: v1.7.2
     created: "2024-11-14T16:35:33.04510563-03:00"
     description: Installs the CRDs for longhorn.
     digest: 4dd78a15aaa54937f5748e2ca4aa18e8df9dee50f1fe92c5b607334bca03f747
@@ -5572,6 +5688,37 @@ entries:
     - assets/longhorn-crd/longhorn-crd-101.0.0+up1.2.6.tgz
     version: 101.0.0+up1.2.6
   neuvector:
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.3
+    apiVersion: v1
+    appVersion: 5.4.1
+    created: "2024-11-27T12:32:25.00656599-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: 094ec5a3fa8be94d57ea859bb3cdfb258f96de6f75c86c3f8642c488da23abad
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-105.0.0+up2.8.3.tgz
+    version: 105.0.0+up2.8.3
   - annotations:
       catalog.cattle.io/auto-install: neuvector-crd=match
       catalog.cattle.io/certified: rancher
@@ -6294,6 +6441,26 @@ entries:
       catalog.cattle.io/namespace: cattle-neuvector-system
       catalog.cattle.io/release-name: neuvector-crd
     apiVersion: v1
+    appVersion: 5.4.1
+    created: "2024-11-27T12:32:43.191804734-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: b1680a432f031098b00b9297cb55821a6f61190177cb96c2c20221c48541d57b
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-105.0.0+up2.8.3.tgz
+    version: 105.0.0+up2.8.3
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
     appVersion: 5.4.0
     created: "2024-10-27T22:46:32.297718493-03:00"
     description: Helm chart for NeuVector's CRD services
@@ -6749,6 +6916,37 @@ entries:
     - assets/neuvector-crd/neuvector-crd-101.0.0+up2.2.3.tgz
     version: 101.0.0+up2.2.3
   neuvector-monitor:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector Monitor
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: neuvector-monitor
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.3
+    apiVersion: v1
+    appVersion: 1-1.0.0
+    created: "2024-11-27T12:32:58.955920336-03:00"
+    description: Helm feature chart (optional) add-on to NeuVector for monitoring
+      with Prometheus/Grafana.
+    digest: 8d3b881c090748550679ab02bf1ccc0644bcc564bb9ad9cb0388c40b3c8db4e5
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-monitor
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector-monitor/neuvector-monitor-105.0.0+up2.8.3.tgz
+    version: 105.0.0+up2.8.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: NeuVector Monitor
