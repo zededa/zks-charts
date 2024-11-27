@@ -12,3 +12,5 @@ fleet-agent:
   - 104.1.1+up0.10.5
 fleet-crd:
   - 104.1.1+up0.10.5
+rancher-provisioning-capi:
+  - 104.1.0+up0.3.1
