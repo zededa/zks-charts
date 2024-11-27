@@ -1,4 +1,4 @@
-ui-plugin-operator:
-  - 103.0.3+up0.2.2
-ui-plugin-operator-crd:
-  - 103.0.3+up0.2.2
+neuvector:
+  - 103.0.7+up2.8.3
+neuvector-crd:
+  - 103.0.7+up2.8.3
