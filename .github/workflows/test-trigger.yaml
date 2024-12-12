@@ -7,9 +7,7 @@ on:
         description: "Mock payload for testing"
         required: true
         default: '{"package": "example-chart", "branch": "main"}'
-  push:
-    branches:
-      - 'workflow-dispatch-dev-210'
+
 
 jobs:
   auto-bump:
