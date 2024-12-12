@@ -1,4 +1,4 @@
-name: Test Trigger
+name: trigger-test
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
         default: '{"package": "example-chart", "branch": "main"}'
 
 jobs:
-  trigger-downstream:
+  trigger-auto-bump:
     uses: ./.github/workflows/auto-bump.yaml
     with:
       eventPayload: ${{ github.event.inputs.eventPayload }}
