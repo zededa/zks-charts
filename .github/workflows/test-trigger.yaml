@@ -1,0 +1,15 @@
+name: Test Trigger for Downstream Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      eventPayload:
+        description: "Mock payload for testing"
+        required: true
+        default: '{"package": "example-chart", "branch": "main"}'
+
+jobs:
+  trigger-downstream:
+    uses: ./.github/workflows/auto-bump.yaml
+    with:
+      eventPayload: ${{ github.event.inputs.eventPayload }}
