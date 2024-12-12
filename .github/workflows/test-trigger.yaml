@@ -7,9 +7,12 @@ on:
         description: "Mock payload for testing"
         required: true
         default: '{"package": "example-chart", "branch": "main"}'
+  push:
+    branches:
+      - 'workflow-dispatch-dev-210'
 
 jobs:
-  trigger-auto-bump:
+  auto-bump:
     uses: ./.github/workflows/auto-bump.yaml
     with:
       eventPayload: ${{ github.event.inputs.eventPayload }}
