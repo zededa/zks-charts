@@ -17,7 +17,11 @@ jobs:
 
       - name: Log Event Payload
         run: |
-          echo "Payload: ${{ fromJson(github.event.inputs.eventPayload) }}"
+         echo "Raw Payload: ${{ github.event.inputs.eventPayload }}"
+
+        # run: |
+        #   echo "Raw Payload: ${{ github.event.inputs.eventPayload }}"
+        #   echo "Payload: ${{ fromJson(github.event.inputs.eventPayload) }}"
 
       - name: Parse JSON Payload
         id: parse_payload
