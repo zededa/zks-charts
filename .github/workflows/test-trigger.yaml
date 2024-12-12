@@ -1,4 +1,4 @@
-name: Test Trigger for Downstream Workflow
+name: Test Trigger
 
 on:
   workflow_dispatch:
