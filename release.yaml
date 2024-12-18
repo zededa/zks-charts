@@ -31,4 +31,4 @@ rancher-cis-benchmark:
 rancher-cis-benchmark-crd:
   - 5.7.0
 rancher-webhook:
-  - 103.0.13+up0.4.14-rc.1
+  - 103.0.13+up0.4.14
