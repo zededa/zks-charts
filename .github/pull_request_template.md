@@ -1,26 +1,31 @@
 ## Issue: <!-- link the issue or issues this PR resolves here -->
 <!-- If your PR depends on changes from another pr link them here and describe why they are needed in your solution section. -->
 
-## Problem
-<!-- Describe the root cause of the issue you are resolving. This may include what behavior is observed and why it is not desirable. If this is a new feature describe why we need this feature and how it will be used. -->
-## Solution
-<!-- Describe what you changed to fix the issue. Relate your changes back to the original issue / feature and explain how this addresses the issue. -->
+#### Pull Requests Rules
 
-## Testing
-<!-- Note: Confirm if the repro steps in the GitHub issue are valid, if not, please update the issue with accurate repro steps. -->
+- `Never remove an already released chart!`
+- Each Pull Request should only modify one chart with its dependencies.
 
-## Engineering Testing
-### Manual Testing
-<!-- Describe what manual testing you did (if no testing was done, explain why). -->
 
-### Automated Testing
-<!--If you added/updated unit/integration/validation tests, describe what cases they cover and do not cover. -->
+Please create your Pull Request title following this rule:
 
-## QA Testing Considerations
-<!-- Highlight areas or (additional) cases that QA should test w.r.t a fresh install as well as the upgrade scenarios -->
+```
+[dev-v2.X] <chart> <version> <action>
+[release-v2.X] <chart> <version> <action>
+```
 
-### Regressions Considerations
-<!-- Dedicated section to specifically call out any areas that with higher chance of regressions caused by this change, include estimation of probability of regressions -->
+- `<chart>`: The full name of the charts exactly how it is written under `/charts folder`
+- `<version>`: The full version of the chart, exactly how it is written under `release.yaml`
+- `<action>`: `update`; `remove`; `add`
 
-## Backporting considerations
-<!-- Does this change need to be backported to other versions? If so, which versions should it be backported to? -->
+##### release.yaml
+- Each chart version in release.yaml DOES NOT modify an already released chart. If so, stop and modify the versions so that it releases a net-new chart.
+- Each chart version in release.yaml IS exactly 1 more patch or minor version than the last released chart version. If not, stop and modify the versions so that it releases a net-new chart.
+
+##### Chart.yaml and index.yaml
+- The `index.yaml` file has an entry for your new chart version.
+- The `index.yaml` entries for each chart matches the `Chart.yaml` for each chart.
+- Each chart has ALL required annotations
+  - kube-version annotation
+  - rancher-version annotation
+  - permits-os annotation (indicates Windows and/or Linux)
