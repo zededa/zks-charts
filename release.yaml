@@ -18,3 +18,5 @@ rancher-logging:
   - 105.2.0-rc.1+up4.10.0
 rancher-logging-crd:
   - 105.2.0-rc.1+up4.10.0
+rancher-vsphere-csi:
+  - 105.0.1+up3.3.1-rancher7
