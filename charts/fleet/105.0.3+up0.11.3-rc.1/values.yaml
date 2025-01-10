@@ -1,11 +1,11 @@
 image:
   repository: rancher/fleet
-  tag: v0.11.3-beta.1
+  tag: v0.11.3-rc.1
   imagePullPolicy: IfNotPresent
 
 agentImage:
   repository: rancher/fleet-agent
-  tag: v0.11.3-beta.1
+  tag: v0.11.3-rc.1
   imagePullPolicy: IfNotPresent
 
 # For cluster registration the public URL of the Kubernetes API server must be set here
@@ -77,6 +77,9 @@ priorityClassName: ""
 
 gitops:
   enabled: true
+  # syncPeriod is used to pick up polling for lost gitrepo events.
+  # It should be larger than the largest gitrepo pollinginterval.
+  syncPeriod: 2h
 
 metrics:
   enabled: true
