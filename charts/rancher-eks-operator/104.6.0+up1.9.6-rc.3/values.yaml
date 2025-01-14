@@ -2,11 +2,10 @@ global:
   cattle:
     systemDefaultRegistry: ""
 
-gkeOperator:
+eksOperator:
   image:
-    repository: rancher/gke-operator
-    tag: v1.9.6-rc.1
-  debug: false
+    repository: rancher/eks-operator
+    tag: v1.9.6-rc.3
 
 httpProxy: ""
 httpsProxy: ""
