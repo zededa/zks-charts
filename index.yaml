@@ -13663,18 +13663,18 @@ entries:
       catalog.cattle.io/type: cluster-tool
       catalog.cattle.io/ui-component: rancher-cis-benchmark
     apiVersion: v1
-    appVersion: v6.6.0-rc.1
-    created: "2025-01-10T21:20:00.124968942+05:30"
+    appVersion: v6.6.0-rc.2
+    created: "2025-01-13T21:35:58.702095081+05:30"
     description: The cis-operator enables running CIS benchmark security scans on
       a kubernetes cluster
-    digest: 6edb38b49cf18c7f0bfb8343d886292e706ce401cba427ee8e54bee157a95291
+    digest: 0e46ad9833605c0065900d21edb92f5fc17ee66674df7f5dab1d4d7da4ccf485
     icon: https://charts.rancher.io/assets/logos/cis-kube-bench.svg
     keywords:
     - security
     name: rancher-cis-benchmark
     urls:
-    - assets/rancher-cis-benchmark/rancher-cis-benchmark-6.6.0-rc.1.tgz
-    version: 6.6.0-rc.1
+    - assets/rancher-cis-benchmark/rancher-cis-benchmark-6.6.0-rc.2.tgz
+    version: 6.6.0-rc.2
   - annotations:
       catalog.cattle.io/auto-install: rancher-cis-benchmark-crd=match
       catalog.cattle.io/certified: rancher
@@ -14593,14 +14593,14 @@ entries:
       catalog.cattle.io/namespace: cis-operator-system
       catalog.cattle.io/release-name: rancher-cis-benchmark-crd
     apiVersion: v1
-    created: "2025-01-10T21:20:00.137791548+05:30"
+    created: "2025-01-13T21:35:58.707367116+05:30"
     description: Installs the CRDs for rancher-cis-benchmark.
-    digest: d69b342c4174c93e79a30ea2532d591b6080440ff86ac0d94a8b7da20d844de4
+    digest: 1c6c1893eeab46963ac99f8d379b1c26532f230c7b7bce88db40afe81cef9fb2
     name: rancher-cis-benchmark-crd
     type: application
     urls:
-    - assets/rancher-cis-benchmark-crd/rancher-cis-benchmark-crd-6.6.0-rc.1.tgz
-    version: 6.6.0-rc.1
+    - assets/rancher-cis-benchmark-crd/rancher-cis-benchmark-crd-6.6.0-rc.2.tgz
+    version: 6.6.0-rc.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
