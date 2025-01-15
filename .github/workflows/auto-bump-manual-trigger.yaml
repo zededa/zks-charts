@@ -11,6 +11,8 @@ on:
         description: "Branch name (only dev branches)"
         required: true
         default: "dev-v2.10"
+  push:
+
 
 
 jobs:
