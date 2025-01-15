@@ -22,12 +22,6 @@ rancher-aks-operator-crd:
   - 105.2.0+up1.10.2-rc.8
 rancher-alerting-drivers:
   - 105.0.1
-rancher-cis-benchmark:
-  - 105.2.0+up7.2.0-rc.2
-  - 105.2.0+up7.2.0-rc.1
-rancher-cis-benchmark-crd:
-  - 105.2.0+up7.2.0-rc.2
-  - 105.2.0+up7.2.0-rc.1
 rancher-eks-operator:
   - 105.2.0+up1.10.2-rc.3
 rancher-eks-operator-crd:
