@@ -975,15 +975,15 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
       catalog.cattle.io/release-name: fleet
     apiVersion: v2
-    appVersion: 0.12.0-alpha.2
-    created: "2025-01-07T14:28:52.272503839Z"
+    appVersion: 0.12.0-alpha.3
+    created: "2025-01-20T15:35:25.570729262+01:00"
     description: Fleet Controller - GitOps at Scale
-    digest: 8616e4aaebbf5babb4a34ba0bb51696dc581b7b240d55c2db53b198cb6ebddef
+    digest: 5b42cd7d4c714ae152ef00bea6bdf3b5eba5c775c17e47c18681da8f39086ea0
     icon: https://charts.rancher.io/assets/logos/fleet.svg
     name: fleet
     urls:
-    - assets/fleet/fleet-106.0.0+up0.12.0-alpha.2.tgz
-    version: 106.0.0+up0.12.0-alpha.2
+    - assets/fleet/fleet-106.0.0+up0.12.0-alpha.3.tgz
+    version: 106.0.0+up0.12.0-alpha.3
   - annotations:
       catalog.cattle.io/auto-install: fleet-crd=match
       catalog.cattle.io/certified: rancher
@@ -1767,15 +1767,15 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
       catalog.cattle.io/release-name: fleet-agent
     apiVersion: v2
-    appVersion: 0.12.0-alpha.2
-    created: "2025-01-07T14:28:53.513728611Z"
+    appVersion: 0.12.0-alpha.3
+    created: "2025-01-20T15:35:27.222255115+01:00"
     description: Fleet Agent - GitOps at Scale
-    digest: c9ddfafdf699989993795d93ce5cd5d76649ee340c038a1a0dbd5a44ccbca5d1
+    digest: 42f1eaf01cb276915546badd98185350069ff565fb9d5539bb91f5c77b161b30
     icon: https://charts.rancher.io/assets/logos/fleet.svg
     name: fleet-agent
     urls:
-    - assets/fleet-agent/fleet-agent-106.0.0+up0.12.0-alpha.2.tgz
-    version: 106.0.0+up0.12.0-alpha.2
+    - assets/fleet-agent/fleet-agent-106.0.0+up0.12.0-alpha.3.tgz
+    version: 106.0.0+up0.12.0-alpha.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -2374,15 +2374,15 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: fleet-crd
     apiVersion: v2
-    appVersion: 0.12.0-alpha.2
-    created: "2025-01-07T14:28:54.793147639Z"
+    appVersion: 0.12.0-alpha.3
+    created: "2025-01-20T15:35:28.958105981+01:00"
     description: Fleet CustomResourceDefinitions
-    digest: 91496e23a6e639779fbcb87a05b834bd871366a4ab70d0c4d4611f6832d489ed
+    digest: 240e050d91423394bc9ec6b6901385ffbca1feabf67d03cb3e829629300d5efe
     icon: https://charts.rancher.io/assets/logos/fleet.svg
     name: fleet-crd
     urls:
-    - assets/fleet-crd/fleet-crd-106.0.0+up0.12.0-alpha.2.tgz
-    version: 106.0.0+up0.12.0-alpha.2
+    - assets/fleet-crd/fleet-crd-106.0.0+up0.12.0-alpha.3.tgz
+    version: 106.0.0+up0.12.0-alpha.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -10240,6 +10240,32 @@ entries:
       catalog.cattle.io/type: cluster-tool
       catalog.cattle.io/ui-component: rancher-cis-benchmark
     apiVersion: v1
+    appVersion: v7.2.0
+    created: "2025-01-20T15:36:06.576526594+01:00"
+    description: The cis-operator enables running CIS benchmark security scans on
+      a kubernetes cluster
+    digest: 845a0e39db7304409d207c0042953b5efac38957df78211e1e56c487371123ff
+    icon: https://charts.rancher.io/assets/logos/cis-kube-bench.svg
+    keywords:
+    - security
+    name: rancher-cis-benchmark
+    urls:
+    - assets/rancher-cis-benchmark/rancher-cis-benchmark-105.2.0+up7.2.0.tgz
+    version: 105.2.0+up7.2.0
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-cis-benchmark-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: CIS Benchmark
+      catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cis-operator-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: cis.cattle.io.clusterscans/v1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: rancher-cis-benchmark
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: rancher-cis-benchmark
+    apiVersion: v1
     appVersion: v7.1.1
     created: "2024-12-13T14:44:10.430580151-03:00"
     description: The cis-operator enables running CIS benchmark security scans on
@@ -11004,6 +11030,20 @@ entries:
     - assets/rancher-cis-benchmark/rancher-cis-benchmark-2.0.0.tgz
     version: 2.0.0
   rancher-cis-benchmark-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cis-operator-system
+      catalog.cattle.io/release-name: rancher-cis-benchmark-crd
+    apiVersion: v1
+    created: "2025-01-20T15:36:06.591046861+01:00"
+    description: Installs the CRDs for rancher-cis-benchmark.
+    digest: d2bb9399fd63aed1e4a76e025b54e9d6602a9bf709d476923455054f96b59316
+    name: rancher-cis-benchmark-crd
+    type: application
+    urls:
+    - assets/rancher-cis-benchmark-crd/rancher-cis-benchmark-crd-105.2.0+up7.2.0.tgz
+    version: 105.2.0+up7.2.0
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"

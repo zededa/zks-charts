@@ -1,15 +1,15 @@
 fleet:
   - 104.1.2+up0.10.6
   - 105.0.0+up0.11.0
-  - 106.0.0+up0.12.0-alpha.2
+  - 106.0.0+up0.12.0-alpha.3
 fleet-agent:
   - 104.1.2+up0.10.6
   - 105.0.0+up0.11.0
-  - 106.0.0+up0.12.0-alpha.2
+  - 106.0.0+up0.12.0-alpha.3
 fleet-crd:
   - 104.1.2+up0.10.6
   - 105.0.0+up0.11.0
-  - 106.0.0+up0.12.0-alpha.2
+  - 106.0.0+up0.12.0-alpha.3
 harvester-csi-driver:
   - 104.0.3+up0.1.21
 longhorn:
@@ -28,10 +28,12 @@ rancher-cis-benchmark:
   - 105.0.0+up7.0.0
   - 105.0.1+up7.0.1
   - 105.1.0+up7.1.1
+  - 105.2.0+up7.2.0
 rancher-cis-benchmark-crd:
   - 105.0.0+up7.0.0
   - 105.0.1+up7.0.1
   - 105.1.0+up7.1.1
+  - 105.2.0+up7.2.0
 rancher-csp-adapter:
   - 105.0.0+up5.0.1
 rancher-logging:
