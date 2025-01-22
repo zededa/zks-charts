@@ -1,5 +1,7 @@
 fleet:
   - 105.0.3+up0.11.3
+fleet-agent:
+  - 105.0.3+up0.11.3
 fleet-crd:
   - 105.0.3+up0.11.3
 rancher-cis-benchmark:
