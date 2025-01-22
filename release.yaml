@@ -18,5 +18,7 @@ rancher-eks-operator-crd:
   - 105.2.0+up1.10.2
 rancher-gke-operator:
   - 105.2.0+up1.10.2
+rancher-gke-operator-crd:
+  - 105.2.0+up1.10.2
 rancher-vsphere-csi:
   - 105.0.1+up3.3.1-rancher7
