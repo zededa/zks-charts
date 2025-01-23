@@ -3099,6 +3099,99 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
       catalog.cattle.io/release-name: harvester-cloud-provider
       catalog.cattle.io/ui-component: harvester-cloud-provider
+      catalog.cattle.io/upstream-version: 0.2.9
+    apiVersion: v2
+    appVersion: v0.2.4
+    created: "2025-01-23T12:44:11.507004238-03:00"
+    dependencies:
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: file://dependency_charts/kube-vip
+      version: 0.6.4
+    description: A Helm chart for Harvester Cloud Provider
+    digest: d1cf38cb39e2930952415d11dffae63e56faa87e9afa47751cfdd16d073a55c9
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-cloud-provider
+    type: application
+    urls:
+    - assets/harvester-cloud-provider/harvester-cloud-provider-105.0.3+up0.2.9.tgz
+    version: 105.0.3+up0.2.9
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester Cloud Provider
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: harvester-cloud-provider
+      catalog.cattle.io/ui-component: harvester-cloud-provider
+      catalog.cattle.io/upstream-version: 0.2.8
+    apiVersion: v2
+    appVersion: v0.2.4
+    created: "2025-01-23T12:44:28.926143638-03:00"
+    dependencies:
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: file://./charts/kube-vip
+      version: 0.6.4
+    description: A Helm chart for Harvester Cloud Provider
+    digest: c141797ef77fd6dff8c650d5d44af50df7e8f0acad9d2dbaaf63c4d969509ba2
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-cloud-provider
+    type: application
+    urls:
+    - assets/harvester-cloud-provider/harvester-cloud-provider-105.0.2+up0.2.8.tgz
+    version: 105.0.2+up0.2.8
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester Cloud Provider
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: harvester-cloud-provider
+      catalog.cattle.io/ui-component: harvester-cloud-provider
+      catalog.cattle.io/upstream-version: 0.2.7
+    apiVersion: v2
+    appVersion: v0.2.3
+    created: "2025-01-23T12:44:48.466653864-03:00"
+    dependencies:
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: file://./charts/kube-vip
+      version: 0.6.4
+    description: A Helm chart for Harvester Cloud Provider
+    digest: 2396679f92b3db07af10bc088d9ca136735b98eed2bc65c63e5e578b5d8b44cf
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-cloud-provider
+    type: application
+    urls:
+    - assets/harvester-cloud-provider/harvester-cloud-provider-105.0.1+up0.2.7.tgz
+    version: 105.0.1+up0.2.7
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester Cloud Provider
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: harvester-cloud-provider
+      catalog.cattle.io/ui-component: harvester-cloud-provider
       catalog.cattle.io/upstream-version: 0.2.6
     apiVersion: v2
     appVersion: v0.2.2
@@ -3456,6 +3549,32 @@ entries:
     - assets/harvester-cloud-provider/harvester-cloud-provider-101.0.0+up0.1.13.tgz
     version: 101.0.0+up0.1.13
   harvester-csi-driver:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.21
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-01-23T12:43:43.965568015-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: 983bd1717b7301895e3d51deece312230325a2d6def15fe87757d381566c1417
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-105.0.1+up0.1.22.tgz
+    version: 105.0.1+up0.1.22
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Harvester CSI Driver
@@ -14733,6 +14852,43 @@ entries:
     - assets/rancher-gke-operator-crd/rancher-gke-operator-crd-101.0.0+up1.1.5.tgz
     version: 101.0.0+up1.1.5
   rancher-istio:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Istio
+      catalog.cattle.io/kube-version: '>= 1.27.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: istio-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: rancher-istio
+      catalog.cattle.io/requests-cpu: 710m
+      catalog.cattle.io/requests-memory: 2314Mi
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: istio
+      catalog.cattle.io/upstream-version: 1.23.2
+    apiVersion: v1
+    appVersion: 1.23.2
+    created: "2025-01-23T12:43:06.010315616-03:00"
+    dependencies:
+    - condition: kiali.enabled
+      name: kiali
+      repository: file://./charts/kiali
+      version: 2.1.0
+    - condition: tracing.enabled
+      name: tracing
+      repository: file://./charts/tracing
+      version: 1.63.0
+    description: A basic Istio setup that installs with the istioctl. Refer to https://istio.io/latest/
+      for details.
+    digest: ad954b45bb27695a1fbd5c80250b0c5139785d3d637e85265174d933e41f0fa2
+    icon: https://charts.rancher.io/assets/logos/istio.svg
+    keywords:
+    - networking
+    - infrastructure
+    name: rancher-istio
+    urls:
+    - assets/rancher-istio/rancher-istio-105.5.1+up1.24.1.tgz
+    version: 105.5.1+up1.24.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Istio
