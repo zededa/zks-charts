@@ -10382,6 +10382,32 @@ entries:
       catalog.cattle.io/type: cluster-tool
       catalog.cattle.io/ui-component: rancher-cis-benchmark
     apiVersion: v1
+    appVersion: v7.3.0-rc.1
+    created: "2025-02-05T21:07:09.465381+05:30"
+    description: The cis-operator enables running CIS benchmark security scans on
+      a kubernetes cluster
+    digest: 874816dd9d82abb6eff6dc6ee146ca67fb5065039c6624024b14d231b699746c
+    icon: https://charts.rancher.io/assets/logos/cis-kube-bench.svg
+    keywords:
+    - security
+    name: rancher-cis-benchmark
+    urls:
+    - assets/rancher-cis-benchmark/rancher-cis-benchmark-105.3.0+up7.3.0-rc.1.tgz
+    version: 105.3.0+up7.3.0-rc.1
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-cis-benchmark-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: CIS Benchmark
+      catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cis-operator-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: cis.cattle.io.clusterscans/v1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: rancher-cis-benchmark
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: rancher-cis-benchmark
+    apiVersion: v1
     appVersion: v7.2.0
     created: "2025-01-20T15:36:06.576526594+01:00"
     description: The cis-operator enables running CIS benchmark security scans on
@@ -11172,6 +11198,20 @@ entries:
     - assets/rancher-cis-benchmark/rancher-cis-benchmark-2.0.0.tgz
     version: 2.0.0
   rancher-cis-benchmark-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cis-operator-system
+      catalog.cattle.io/release-name: rancher-cis-benchmark-crd
+    apiVersion: v1
+    created: "2025-02-05T21:07:09.478275+05:30"
+    description: Installs the CRDs for rancher-cis-benchmark.
+    digest: 4131cbd018f57534cbee841a78b4af1d4d64c09ab9943b742e2c908ca14fe512
+    name: rancher-cis-benchmark-crd
+    type: application
+    urls:
+    - assets/rancher-cis-benchmark-crd/rancher-cis-benchmark-crd-105.3.0+up7.3.0-rc.1.tgz
+    version: 105.3.0+up7.3.0-rc.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -15680,11 +15720,11 @@ entries:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/deploys-on-os: windows
       catalog.cattle.io/display-name: Monitoring
-      catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/provides-gvr: monitoring.coreos.com.prometheus/v1
-      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
       catalog.cattle.io/release-name: rancher-monitoring
       catalog.cattle.io/requests-cpu: 4500m
       catalog.cattle.io/requests-memory: 4000Mi
@@ -15693,7 +15733,7 @@ entries:
       catalog.cattle.io/upstream-version: 57.0.3
     apiVersion: v2
     appVersion: v0.75.1
-    created: "2025-02-03T12:13:25.330544037-05:00"
+    created: "2025-02-04T11:12:18.102374+05:30"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -15765,14 +15805,14 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 24f2f10a561695f654f8a0b11f478c9c972016a9b7474560f448bd79bca1f99f
+    digest: 2beffbe48a5b41510e485ae970c3636b0ab5a61a882eb68625850926fdfc0105
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
     - operator
     - prometheus
     - kube-prometheus
-    kubeVersion: '>=1.28.0-0'
+    kubeVersion: '>=1.30.0-0'
     maintainers:
     - email: andrew@quadcorps.co.uk
       name: andrewgkew
