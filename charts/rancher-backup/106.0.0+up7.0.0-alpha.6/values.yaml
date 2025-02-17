@@ -1,6 +1,6 @@
 image:
   repository: rancher/backup-restore-operator
-  tag: v7.0.0-alpha.5
+  tag: v7.0.0-alpha.6
 
 ## Default s3 bucket for storing all backup files created by the backup-restore-operator
 s3:
@@ -54,7 +54,7 @@ global:
       enabled: false # PSP enablement should default to false
   kubectl:
     repository: rancher/kuberlr-kubectl
-    tag: v4.0.0
+    tag: v4.0.2
 
 ## Node labels for pod assignment
 ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
@@ -79,3 +79,14 @@ imagePullPolicy: "Always"
 ## Optional array of imagePullSecrets containing private registry credentials
 ## Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 imagePullSecrets: []
+
+monitoring:
+  metrics:
+    enabled: false
+
+  serviceMonitor:
+    enabled: false
+
+    additionalLabels: {}
+    metricRelabelings: []
+    relabelings: []
