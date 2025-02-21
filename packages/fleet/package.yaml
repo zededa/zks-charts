@@ -4,7 +4,7 @@ chartRepoBranch: charts/v0.11
 subdirectory: charts/fleet
 workingDir: fleet
 additionalCharts:
-  - workingDir: charts/crds
+  - workingDir: fleet-crd
     upstreamOptions:
       url: https://github.com/rancher/fleet.git
       chartRepoBranch: charts/v0.11
