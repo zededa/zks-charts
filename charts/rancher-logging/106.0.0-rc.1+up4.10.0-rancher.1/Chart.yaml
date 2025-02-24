@@ -21,10 +21,10 @@ keywords:
 - logging
 - fluentd
 - fluentbit
-kubeVersion: '>=1.30.0-0'
+kubeVersion: '>=1.22.0-0'
 name: rancher-logging
 sources:
 - https://github.com/kube-logging/logging-operator
 - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-operator
 type: application
-version: 106.0.0-rc.1+up4.10.0
+version: 106.0.0-rc.1+up4.10.0-rancher.1

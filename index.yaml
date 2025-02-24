@@ -15242,24 +15242,24 @@ entries:
       catalog.cattle.io/upstream-version: 4.10.0
     apiVersion: v2
     appVersion: 4.10.0
-    created: "2025-01-31T19:23:27.399296+05:30"
+    created: "2025-02-24T14:47:49.769521-05:00"
     description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
-    digest: 8e73d37d4854b3062bb0a2bd700180c6d47f2bfa7627f0b5d2bab6d6be225fd7
+    digest: 96dccbce9a6a377804ad33f32473053f0eb7cd5d1289c65b41693da2528fb8da
     home: https://kube-logging.github.io
     icon: file://assets/logos/rancher-logging.svg
     keywords:
     - logging
     - fluentd
     - fluentbit
-    kubeVersion: '>=1.30.0-0'
+    kubeVersion: '>=1.22.0-0'
     name: rancher-logging
     sources:
     - https://github.com/kube-logging/logging-operator
     - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-operator
     type: application
     urls:
-    - assets/rancher-logging/rancher-logging-106.0.0-rc.1+up4.10.0.tgz
-    version: 106.0.0-rc.1+up4.10.0
+    - assets/rancher-logging/rancher-logging-106.0.0-rc.1+up4.10.0-rancher.1.tgz
+    version: 106.0.0-rc.1+up4.10.0-rancher.1
   - annotations:
       catalog.cattle.io/auto-install: rancher-logging-crd=match
       catalog.cattle.io/certified: rancher
@@ -15742,14 +15742,14 @@ entries:
       catalog.cattle.io/namespace: cattle-logging-system
       catalog.cattle.io/release-name: rancher-logging-crd
     apiVersion: v1
-    created: "2025-01-29T08:19:12.231857+05:30"
+    created: "2025-02-24T14:47:49.821261-05:00"
     description: Installs the CRDs for rancher-logging.
-    digest: 9b5035d89add8f2a35e4b8717fcba1833a8ae1cbe48360b495fad6c473125ca4
+    digest: c9dbc07ee4b781b33d878fccc4255de29d7aa323b0c5474a2ac3ab6e6515992b
     name: rancher-logging-crd
     type: application
     urls:
-    - assets/rancher-logging-crd/rancher-logging-crd-106.0.0-rc.1+up4.10.0.tgz
-    version: 106.0.0-rc.1+up4.10.0
+    - assets/rancher-logging-crd/rancher-logging-crd-106.0.0-rc.1+up4.10.0-rancher.1.tgz
+    version: 106.0.0-rc.1+up4.10.0-rancher.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
