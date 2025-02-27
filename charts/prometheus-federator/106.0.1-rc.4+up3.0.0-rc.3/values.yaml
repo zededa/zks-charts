@@ -123,7 +123,7 @@ helmProjectOperator:
   image:
     registry: ''
     repository: rancher/prometheus-federator
-    tag: v3.0.0-dpock.2
+    tag: v3.0.0-rc.3
     pullPolicy: IfNotPresent
 
   # Configure how the operator will manage the CustomResourceDefinitions (CRDs) it needs to function.
@@ -148,7 +148,7 @@ helmProjectOperator:
     job:
       image:
         repository: rancher/klipper-helm
-        tag: v0.7.0-build20220315
+        tag: v0.9.4-build20250113
 
   helmLocker:
     enabled: true
