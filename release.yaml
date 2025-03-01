@@ -183,6 +183,7 @@ rancher-provisioning-capi:
   - 104.1.0+up0.3.1
 rancher-vsphere-csi:
   - 106.0.0+up3.3.1-rancher7
+  - 105.0.1+up3.3.1-rancher7
   - 104.1.0+up3.3.1-rancher7
 rancher-webhook:
   - 106.0.0+up0.7.0-rc.6
