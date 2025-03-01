@@ -84,6 +84,7 @@ neuvector-monitor:
   - 104.0.4+up2.8.4
 prometheus-federator:
   - 106.0.1-rc.4+up3.0.0-rc.3
+  - 105.1.0+up0.4.5
   - 104.1.0+up0.4.5
 rancher-aks-operator:
   - 106.0.0+up1.11.0-rc.4
