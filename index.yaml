@@ -7367,6 +7367,37 @@ entries:
       catalog.cattle.io/auto-install: neuvector-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.4
+    apiVersion: v1
+    appVersion: 5.4.2
+    created: "2025-02-28T16:26:39.475914582-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: 1614627ec288c29e5d9d42bc07cfe52123ec0290985764b5ff74615330a15785
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-105.0.1+up2.8.4.tgz
+    version: 105.0.1+up2.8.4
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
       catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.32.0-0'
       catalog.cattle.io/namespace: cattle-neuvector-system
       catalog.cattle.io/os: linux
@@ -7394,6 +7425,68 @@ entries:
     urls:
     - assets/neuvector/neuvector-105.0.0+up2.8.3.tgz
     version: 105.0.0+up2.8.3
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.4
+    apiVersion: v1
+    appVersion: 5.4.2
+    created: "2025-02-28T16:26:46.088350805-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: e19ce0b79be2386cafa46da08f3c4e55786f0b637168bdbeb7a82ba9fe82d1bd
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-104.0.4+up2.8.4.tgz
+    version: 104.0.4+up2.8.4
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.3
+    apiVersion: v1
+    appVersion: 5.4.1
+    created: "2025-02-28T16:26:52.804529427-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: d883db700b6831aeb8dd649630ab436de33a38021c1060d33a9b222a952059a4
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-104.0.3+up2.8.3.tgz
+    version: 104.0.3+up2.8.3
   - annotations:
       catalog.cattle.io/auto-install: neuvector-crd=match
       catalog.cattle.io/certified: rancher
@@ -7487,6 +7580,68 @@ entries:
     urls:
     - assets/neuvector/neuvector-104.0.0+up2.7.7.tgz
     version: 104.0.0+up2.7.7
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.4
+    apiVersion: v1
+    appVersion: 5.4.2
+    created: "2025-02-28T16:26:59.670890108-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: 0932b7f021ac91a895f09c1e6b332a3ea7f209672399fc1c7d0c17454842b3db
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-103.0.8+up2.8.4.tgz
+    version: 103.0.8+up2.8.4
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.3
+    apiVersion: v1
+    appVersion: 5.4.1
+    created: "2025-02-28T16:27:06.82785418-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: 5eba49acabc0f98eec6b3ec86f08cc24525d59f66e8fb364da0290b2bff37511
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-103.0.7+up2.8.3.tgz
+    version: 103.0.7+up2.8.3
   - annotations:
       catalog.cattle.io/auto-install: neuvector-crd=match
       catalog.cattle.io/certified: rancher
@@ -8116,6 +8271,26 @@ entries:
       catalog.cattle.io/namespace: cattle-neuvector-system
       catalog.cattle.io/release-name: neuvector-crd
     apiVersion: v1
+    appVersion: 5.4.2
+    created: "2025-02-28T16:27:14.060875195-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: 3a4c18e395413d4c2e94c8fdf89bbb3b87319783f2d67841503099c7c0f234b3
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-105.0.1+up2.8.4.tgz
+    version: 105.0.1+up2.8.4
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
     appVersion: 5.4.1
     created: "2024-11-21T15:32:28.654714244-08:00"
     description: Helm chart for NeuVector's CRD services
@@ -8130,6 +8305,46 @@ entries:
     urls:
     - assets/neuvector-crd/neuvector-crd-105.0.0+up2.8.3.tgz
     version: 105.0.0+up2.8.3
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
+    appVersion: 5.4.2
+    created: "2025-02-28T16:27:21.265806844-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: 13ccb47a817b95d754078558fe6d227ed190dbe5b558223b85958402b33d2632
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-104.0.4+up2.8.4.tgz
+    version: 104.0.4+up2.8.4
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
+    appVersion: 5.4.1
+    created: "2025-02-28T16:27:28.493645613-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: 82d456ca3e96c6d5157d9ea394ba180c03630552af193e69971b570ff2e82e32
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-104.0.3+up2.8.3.tgz
+    version: 104.0.3+up2.8.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -8190,6 +8405,46 @@ entries:
     urls:
     - assets/neuvector-crd/neuvector-crd-104.0.0+up2.7.7.tgz
     version: 104.0.0+up2.7.7
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
+    appVersion: 5.4.2
+    created: "2025-02-28T16:27:35.501744878-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: 7cbcd450a1b05b84f8b154801f28f8d22bfb56a2c551fe20d68a1a28913b2a01
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-103.0.8+up2.8.4.tgz
+    version: 103.0.8+up2.8.4
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
+    appVersion: 5.4.1
+    created: "2025-02-28T16:27:42.647340864-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: 71e733680f617a050ac286dc9e917da83806fb938aadbe105abdba27705c5483
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-103.0.7+up2.8.3.tgz
+    version: 103.0.7+up2.8.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -8594,6 +8849,37 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: NeuVector Monitor
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: neuvector-monitor
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.4
+    apiVersion: v1
+    appVersion: 1.0.1
+    created: "2025-02-28T16:27:49.673130379-03:00"
+    description: Helm feature chart (optional) add-on to NeuVector for monitoring
+      with Prometheus/Grafana.
+    digest: 83f60ea328c2ececa017e0b32c89f17bc9e4aa911dfe38c809854396c3d49496
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-monitor
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector-monitor/neuvector-monitor-105.0.1+up2.8.4.tgz
+    version: 105.0.1+up2.8.4
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector Monitor
       catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.32.0-0'
       catalog.cattle.io/namespace: cattle-neuvector-system
       catalog.cattle.io/os: linux
@@ -8625,6 +8911,37 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: NeuVector Monitor
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: neuvector-monitor
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.4
+    apiVersion: v1
+    appVersion: 1.0.1
+    created: "2025-02-28T16:27:56.815755027-03:00"
+    description: Helm feature chart (optional) add-on to NeuVector for monitoring
+      with Prometheus/Grafana.
+    digest: cc5e25d209918f37b956ce46f23ac6bf8506a8c8b2e9d0cade1cffc18a8e14f3
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-monitor
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector-monitor/neuvector-monitor-104.0.4+up2.8.4.tgz
+    version: 104.0.4+up2.8.4
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector Monitor
       catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.31.0-0'
       catalog.cattle.io/namespace: cattle-neuvector-system
       catalog.cattle.io/os: linux
@@ -8653,6 +8970,37 @@ entries:
     urls:
     - assets/neuvector-monitor/neuvector-monitor-104.0.0+up2.7.7.tgz
     version: 104.0.0+up2.7.7
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector Monitor
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: neuvector-monitor
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.4
+    apiVersion: v1
+    appVersion: 1.0.1
+    created: "2025-02-28T16:28:03.861456793-03:00"
+    description: Helm feature chart (optional) add-on to NeuVector for monitoring
+      with Prometheus/Grafana.
+    digest: 2fd1eedf9be4b3615af36f4d631aa27de5e69f10e55376d71e9e121180c5c50b
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-monitor
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector-monitor/neuvector-monitor-103.0.8+up2.8.4.tgz
+    version: 103.0.8+up2.8.4
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: NeuVector Monitor
