@@ -4197,6 +4197,58 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
       catalog.cattle.io/release-name: harvester-csi-driver
       catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.23
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:02.266808895-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: 708f5097a426b272a09fb13a699447d56ff546c925dfba800f4b7c9df654dbfa
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-105.0.2+up0.1.23.tgz
+    version: 105.0.2+up0.1.23
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.21
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:09.252493212-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: 983bd1717b7301895e3d51deece312230325a2d6def15fe87757d381566c1417
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-105.0.1+up0.1.22.tgz
+    version: 105.0.1+up0.1.22
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
       catalog.cattle.io/upstream-version: 0.1.21
     apiVersion: v2
     appVersion: v0.2.2
@@ -4213,6 +4265,58 @@ entries:
     urls:
     - assets/harvester-csi-driver/harvester-csi-driver-105.0.0+up0.1.21.tgz
     version: 105.0.0+up0.1.21
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.23
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:16.047619782-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: e1bc2269dbea2acdd61de4c73de6bd60d9e81be6ba53aea744a2ff295b027c84
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-104.0.5+up0.1.23.tgz
+    version: 104.0.5+up0.1.23
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.21
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:22.870149695-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: 923aefe60d39257fdc306e7f484fb3e6f42920c0aaf95df509e5f28072c2492e
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-104.0.4+up0.1.22.tgz
+    version: 104.0.4+up0.1.22
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Harvester CSI Driver
@@ -4317,6 +4421,84 @@ entries:
     urls:
     - assets/harvester-csi-driver/harvester-csi-driver-104.0.0+up0.1.17.tgz
     version: 104.0.0+up0.1.17
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.29.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.23
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:29.793980685-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: f75f70932a81dce956e3a83d0c4d2529389fec974cb09789fc385c178e661181
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-103.0.6+up0.1.23.tgz
+    version: 103.0.6+up0.1.23
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.29.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.21
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:36.865834205-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: 5b4372c0bf8154def2a3f6f00b8e1e6b289e411622655a035723fdfca6b36e42
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-103.0.5+up0.1.22.tgz
+    version: 103.0.5+up0.1.22
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.29.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+      catalog.cattle.io/upstream-version: 0.1.21
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-02-28T16:24:43.927497703-03:00"
+    description: A Helm chart for Harvester CSI driver
+    digest: b5aabbc1fdd5a81d40ea4f485ee807bcfb056276db8a57b8114f396e2a30614b
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - assets/harvester-csi-driver/harvester-csi-driver-103.0.4+up0.1.21.tgz
+    version: 103.0.4+up0.1.21
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Harvester CSI Driver
