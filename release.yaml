@@ -193,3 +193,6 @@ rancher-webhook:
   - 104.0.7+up0.5.7
 remotedialer-proxy:
   - 106.0.0+up0.4.4-rc.2
+rancher-istio:
+  - 105.5.1+up1.24.1
+  - 105.5.0+up1.24.1
