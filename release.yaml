@@ -103,6 +103,7 @@ rancher-aks-operator-crd:
   - 103.7.0+up1.2.7
   - 103.6.0+up1.2.6
 rancher-alerting-drivers:
+  - 105.0.1
   - 106.0.0-rc.1
 rancher-backup:
   - 106.0.0+up7.0.0-alpha.8
