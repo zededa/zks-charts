@@ -179,6 +179,7 @@ rancher-monitoring-crd:
   - 104.1.4+up57.0.3
 rancher-provisioning-capi:
   - 106.0.0+up0.7.0
+  - 105.1.0+up0.6.0
   - 104.1.0+up0.3.1
 rancher-vsphere-csi:
   - 106.0.0+up3.3.1-rancher7
