@@ -25,4 +25,4 @@ maintainers:
 - email: julia.suriano@suse.com
   name: Julia
 name: prometheus-federator
-version: 106.0.1-rc.4+up3.0.0-rc.3
+version: 106.0.0-rc.1+up3.0.0-rc.3
