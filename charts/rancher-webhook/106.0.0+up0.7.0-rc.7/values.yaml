@@ -1,6 +1,6 @@
 image:
   repository: rancher/rancher-webhook
-  tag: v0.7.0-rc.6
+  tag: v0.7.0-rc.7
   imagePullPolicy: IfNotPresent
 
 global:
