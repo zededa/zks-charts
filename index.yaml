@@ -19198,7 +19198,7 @@ entries:
       catalog.cattle.io/upstream-version: 66.7.1
     apiVersion: v2
     appVersion: v0.79.0
-    created: "2025-03-18T16:34:49.172698-04:00"
+    created: "2025-03-19T16:46:55.027515-04:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -19292,7 +19292,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 9ea527872607b102550c381561ed0f8c097c87e9c6fe3d7ed78392ed19f2ba2f
+    digest: 3dd693e9001a368ebf09f1c9601bcb82d2abb3014d9fa5f678cbb1f07868f469
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
@@ -19323,8 +19323,8 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - assets/rancher-monitoring/rancher-monitoring-106.0.0-rc.1+up66.7.1-rancher.2.tgz
-    version: 106.0.0-rc.1+up66.7.1-rancher.2
+    - assets/rancher-monitoring/rancher-monitoring-106.0.0+up66.7.1-rancher.2.tgz
+    version: 106.0.0+up66.7.1-rancher.2
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -22624,14 +22624,14 @@ entries:
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/release-name: rancher-monitoring-crd
     apiVersion: v2
-    created: "2025-03-18T16:34:49.250122-04:00"
+    created: "2025-03-19T16:46:55.106913-04:00"
     description: Installs the CRDs for rancher-monitoring.
-    digest: 4f3a6c950eb0718b3c3cff7193aba3ea7e054c6b3cf241ce20fb9392547f7dd1
+    digest: 65ff38d4e91d3aaaff32a8dcd42acf05f1148e3ed8642adb4eb56b234f4a5fee
     name: rancher-monitoring-crd
     type: application
     urls:
-    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.0-rc.1+up66.7.1-rancher.2.tgz
-    version: 106.0.0-rc.1+up66.7.1-rancher.2
+    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.0+up66.7.1-rancher.2.tgz
+    version: 106.0.0+up66.7.1-rancher.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
