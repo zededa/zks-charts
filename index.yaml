@@ -11077,13 +11077,13 @@ entries:
       catalog.cattle.io/scope: management
       catalog.cattle.io/type: cluster-tool
       catalog.cattle.io/ui-component: rancher-backup
-      catalog.cattle.io/upstream-version: 6.0.1-rc.1
+      catalog.cattle.io/upstream-version: 6.0.1
     apiVersion: v2
-    appVersion: 6.0.1-rc.1
-    created: "2025-02-28T15:26:16.528777759-04:00"
+    appVersion: 6.0.1
+    created: "2025-03-20T11:00:40.579216304-04:00"
     description: Provides ability to back up and restore the Rancher application running
       on any Kubernetes cluster
-    digest: 5adab4640c81d9b0f09fa7c4915f42a71cfac388a56862f55562b443a2d64ff9
+    digest: fd252ae2912c464a890039cf086f6c7b2f7a7e66fe10e36046c2b790739e2628
     icon: https://charts.rancher.io/assets/logos/backup-restore.svg
     keywords:
     - applications
@@ -11091,8 +11091,8 @@ entries:
     kubeVersion: '>= 1.28.0-0'
     name: rancher-backup
     urls:
-    - assets/rancher-backup/rancher-backup-105.0.1+up6.0.1-rc.1.tgz
-    version: 105.0.1+up6.0.1-rc.1
+    - assets/rancher-backup/rancher-backup-105.0.1+up6.0.1.tgz
+    version: 105.0.1+up6.0.1
   - annotations:
       catalog.cattle.io/auto-install: rancher-backup-crd=match
       catalog.cattle.io/certified: rancher
@@ -11957,15 +11957,15 @@ entries:
       catalog.cattle.io/namespace: cattle-resources-system
       catalog.cattle.io/release-name: rancher-backup-crd
     apiVersion: v2
-    appVersion: 6.0.1-rc.1
-    created: "2025-02-28T15:26:19.692588425-04:00"
+    appVersion: 6.0.1
+    created: "2025-03-20T11:00:43.093416912-04:00"
     description: Installs the CRDs for rancher-backup.
-    digest: 06c0fabfa15244b4bf32fa1fc58e5821090888a7a19a20e9f3c6072fe77384ed
+    digest: e423083d1d823b13b33f71c85b661db4f177b29e16b46d8bea205bc40e294142
     name: rancher-backup-crd
     type: application
     urls:
-    - assets/rancher-backup-crd/rancher-backup-crd-105.0.1+up6.0.1-rc.1.tgz
-    version: 105.0.1+up6.0.1-rc.1
+    - assets/rancher-backup-crd/rancher-backup-crd-105.0.1+up6.0.1.tgz
+    version: 105.0.1+up6.0.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
