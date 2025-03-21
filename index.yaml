@@ -21939,9 +21939,9 @@ entries:
       catalog.cattle.io/upstream-version: 4.8.0
     apiVersion: v2
     appVersion: 4.8.0
-    created: "2025-02-25T11:56:30.045263045-07:00"
+    created: "2025-03-21T14:16:30.929790451-04:00"
     description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
-    digest: a498be42b565a8b40d351987793e1f2bd3f32a5c3ab282c92b83468cf23b07d5
+    digest: 26940230dbae8574756baa15e1c0d9867a013f8fff6beb0a633d9d93cf35cc73
     home: https://kube-logging.github.io
     icon: file://assets/logos/rancher-logging.svg
     keywords:
@@ -21955,8 +21955,8 @@ entries:
     - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-operator
     type: application
     urls:
-    - assets/rancher-logging/rancher-logging-104.2.1-rc.1+up4.8.0.tgz
-    version: 104.2.1-rc.1+up4.8.0
+    - assets/rancher-logging/rancher-logging-104.2.1+up4.8.0.tgz
+    version: 104.2.1+up4.8.0
   - annotations:
       catalog.cattle.io/auto-install: rancher-logging-crd=match
       catalog.cattle.io/certified: rancher
@@ -22813,14 +22813,14 @@ entries:
       catalog.cattle.io/namespace: cattle-logging-system
       catalog.cattle.io/release-name: rancher-logging-crd
     apiVersion: v1
-    created: "2025-02-25T11:56:30.142372224-07:00"
+    created: "2025-03-21T14:16:31.009046405-04:00"
     description: Installs the CRDs for rancher-logging.
-    digest: 5b8663ee2aa79e520a241147e9da0cf8dd9b5a106cee1f12d8887369d8597e50
+    digest: c0d3720e28665efc9b530f68efdf927b6f1579ed8f23db685d80bcadb3d1baaa
     name: rancher-logging-crd
     type: application
     urls:
-    - assets/rancher-logging-crd/rancher-logging-crd-104.2.1-rc.1+up4.8.0.tgz
-    version: 104.2.1-rc.1+up4.8.0
+    - assets/rancher-logging-crd/rancher-logging-crd-104.2.1+up4.8.0.tgz
+    version: 104.2.1+up4.8.0
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
