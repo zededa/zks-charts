@@ -1,22 +1,18 @@
-prometheus-federator:
-  - 106.0.0+up3.0.0
-rancher-alerting-drivers:
-  - 106.0.0
-rancher-backup:
-  - 106.0.0+up7.0.0
-rancher-backup-crd:
-  - 106.0.0+up7.0.0
-rancher-cis-benchmark:
-  - 106.0.0+up8.0.0
-rancher-cis-benchmark-crd:
-  - 106.0.0+up8.0.0
-rancher-csp-adapter:
-  - 106.0.0+up6.0.0
-rancher-logging:
-  - 106.0.0+up4.10.0-rancher.1
-rancher-logging-crd:
-  - 106.0.0+up4.10.0-rancher.1
-rancher-monitoring:
-  - 106.0.0+up66.7.1-rancher.2
-rancher-monitoring-crd:
-  - 106.0.0+up66.7.1-rancher.2
+fleet:
+  - 106.0.0+up0.12.0
+fleet-agent:
+  - 106.0.0+up0.12.0
+fleet-crd:
+  - 106.0.0+up0.12.0
+harvester-cloud-provider:
+  - 106.0.0+up0.2.9
+neuvector:
+  - 106.0.0+up2.8.5
+neuvector-crd:
+  - 106.0.0+up2.8.5
+neuvector-monitor:
+  - 106.0.0+up2.8.5
+rancher-istio:
+  - 106.0.0+up1.22.1
+  - 106.2.0+up1.24.1
+  - 106.1.0+up1.23.2
