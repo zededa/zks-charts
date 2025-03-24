@@ -9083,6 +9083,38 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Prometheus Federator
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-monitoring-system
+      catalog.cattle.io/os: linux,windows
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: helm.cattle.io.projecthelmchart/v1alpha1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: prometheus-federator
+    apiVersion: v2
+    appVersion: v3.0.0
+    created: "2025-03-24T13:56:02.365919108-03:00"
+    description: Prometheus Federator - installs rancher-project-monitoring in project
+      namespaces.
+    digest: 59685274f020e0818630f2b4c182fddc0f170faca1fdb5c6321f542461fdbd59
+    icon: https://raw.githubusercontent.com/rancher/prometheus-federator/main/assets/logos/prometheus-federator.svg
+    keywords:
+    - prometheus
+    - monitoring
+    - project-monitoring
+    maintainers:
+    - email: alexandre.lamarre@suse.com
+      name: Alexandre
+    - email: dan.pock@suse.com
+      name: Dan
+    - email: julia.suriano@suse.com
+      name: Julia
+    name: prometheus-federator
+    urls:
+    - assets/prometheus-federator/prometheus-federator-106.0.0+up3.0.0.tgz
+    version: 106.0.0+up3.0.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Prometheus Federator
       catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/os: linux,windows
@@ -10627,6 +10659,40 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Alerting Drivers
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-alerting-drivers
+      catalog.cattle.io/type: cluster-tool
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-03-24T13:57:05.109972464-03:00"
+    dependencies:
+    - condition: prom2teams.enabled
+      name: prom2teams
+      repository: file://./charts/prom2teams
+      version: 0.2.0
+    - condition: sachet.enabled
+      name: sachet
+      repository: file://./charts/sachet
+      version: 1.0.1
+    description: The manager for third-party webhook receivers used in Prometheus
+      Alertmanager
+    digest: 67ed583c6e81121f473a4823930f6b9224be79a0b08f5c6a8e890f1a79cc3ee7
+    icon: https://charts.rancher.io/assets/logos/alerting-drivers.svg
+    keywords:
+    - monitoring
+    - alertmanger
+    - webhook
+    kubeVersion: '>=1.28.0-0'
+    name: rancher-alerting-drivers
+    urls:
+    - assets/rancher-alerting-drivers/rancher-alerting-drivers-106.0.0.tgz
+    version: 106.0.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Alerting Drivers
       catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux,windows
@@ -10987,6 +11053,36 @@ entries:
     - assets/rancher-alerting-drivers/rancher-alerting-drivers-101.0.0.tgz
     version: 101.0.0
   rancher-backup:
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-backup-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Rancher Backups
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: resources.cattle.io.resourceset/v1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-backup
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: rancher-backup
+      catalog.cattle.io/upstream-version: 7.0.0
+    apiVersion: v2
+    appVersion: 7.0.0
+    created: "2025-03-24T13:56:52.86680642-03:00"
+    description: Provides ability to back up and restore the Rancher application running
+      on any Kubernetes cluster
+    digest: d7a63aa1c3f6e8da12552f288608fe948bae85438b70e53a33ed29c2b6b31cdf
+    icon: https://charts.rancher.io/assets/logos/backup-restore.svg
+    keywords:
+    - applications
+    - infrastructure
+    kubeVersion: '>= 1.30.0-0'
+    name: rancher-backup
+    urls:
+    - assets/rancher-backup/rancher-backup-106.0.0+up7.0.0.tgz
+    version: 106.0.0+up7.0.0
   - annotations:
       catalog.cattle.io/auto-install: rancher-backup-crd=match
       catalog.cattle.io/certified: rancher
@@ -11851,6 +11947,21 @@ entries:
       catalog.cattle.io/namespace: cattle-resources-system
       catalog.cattle.io/release-name: rancher-backup-crd
     apiVersion: v2
+    appVersion: 7.0.0
+    created: "2025-03-24T13:56:40.270019792-03:00"
+    description: Installs the CRDs for rancher-backup.
+    digest: 7da21f0ea6e98571bbfef2c3745a529511963527164f619fcd29360cee294621
+    name: rancher-backup-crd
+    type: application
+    urls:
+    - assets/rancher-backup-crd/rancher-backup-crd-106.0.0+up7.0.0.tgz
+    version: 106.0.0+up7.0.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/release-name: rancher-backup-crd
+    apiVersion: v2
     appVersion: 6.0.0
     created: "2024-11-08T10:53:40.370473092-03:00"
     description: Installs the CRDs for rancher-backup.
@@ -12298,6 +12409,32 @@ entries:
     - assets/rancher-backup-crd/rancher-backup-crd-1.0.200.tgz
     version: 1.0.200
   rancher-cis-benchmark:
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-cis-benchmark-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: CIS Benchmark
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cis-operator-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: cis.cattle.io.clusterscans/v1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-cis-benchmark
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: rancher-cis-benchmark
+    apiVersion: v1
+    appVersion: v8.0.0
+    created: "2025-03-24T13:55:13.820279481-03:00"
+    description: The cis-operator enables running CIS benchmark security scans on
+      a kubernetes cluster
+    digest: 27b9de48a97a3b195f0b66459eda2dbeb21e52d267b621f25501c4192017f483
+    icon: file://assets/logos/rancher-cis-benchmark.svg
+    keywords:
+    - security
+    name: rancher-cis-benchmark
+    urls:
+    - assets/rancher-cis-benchmark/rancher-cis-benchmark-106.0.0+up8.0.0.tgz
+    version: 106.0.0+up8.0.0
   - annotations:
       catalog.cattle.io/auto-install: rancher-cis-benchmark-crd=match
       catalog.cattle.io/certified: rancher
@@ -13238,6 +13375,20 @@ entries:
       catalog.cattle.io/namespace: cis-operator-system
       catalog.cattle.io/release-name: rancher-cis-benchmark-crd
     apiVersion: v1
+    created: "2025-03-24T13:55:25.609846184-03:00"
+    description: Installs the CRDs for rancher-cis-benchmark.
+    digest: 578984c4e92bf07fd7ceab49b1711a5d50720cdaa7dafc9dfecc9f22bfc43bf6
+    name: rancher-cis-benchmark-crd
+    type: application
+    urls:
+    - assets/rancher-cis-benchmark-crd/rancher-cis-benchmark-crd-106.0.0+up8.0.0.tgz
+    version: 106.0.0+up8.0.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cis-operator-system
+      catalog.cattle.io/release-name: rancher-cis-benchmark-crd
+    apiVersion: v1
     created: "2025-03-02T13:08:22.547025859-03:00"
     description: Installs the CRDs for rancher-cis-benchmark.
     digest: 2a5109708deff83445af7715278f39562deea5508d95b09c8337540da7a42bf6
@@ -13737,6 +13888,27 @@ entries:
     - assets/rancher-cis-benchmark-crd/rancher-cis-benchmark-crd-2.0.0.tgz
     version: 2.0.0
   rancher-csp-adapter:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Rancher CSP Adapter
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-csp-adapter-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-csp-adapter
+      catalog.cattle.io/scope: management
+    apiVersion: v2
+    appVersion: 6.0.0
+    created: "2025-03-24T13:57:17.393070937-03:00"
+    description: Cloud Service Provider Marketplace Adapter for Rancher. Monitors
+      Rancher entitlements against usage.
+    digest: 10e247d79eefc040b99ee41a58b3dff810ca95dcb3b3269cb3ed6fcda77d38ba
+    name: rancher-csp-adapter
+    urls:
+    - assets/rancher-csp-adapter/rancher-csp-adapter-106.0.0+up6.0.0.tgz
+    version: 106.0.0+up6.0.0
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Rancher CSP Adapter
@@ -17622,6 +17794,40 @@ entries:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/deploys-on-os: windows
       catalog.cattle.io/display-name: Logging
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: logging.banzaicloud.io.clusterflow/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-logging
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: logging
+      catalog.cattle.io/upstream-version: 4.10.0
+    apiVersion: v2
+    appVersion: 4.10.0
+    created: "2025-03-24T13:56:15.088530154-03:00"
+    description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
+    digest: feaa31bc01c8e87c7c9f58041b6e18463397103c4902dad2c19f18ad1645cab4
+    home: https://kube-logging.github.io
+    icon: file://assets/logos/rancher-logging.svg
+    keywords:
+    - logging
+    - fluentd
+    - fluentbit
+    kubeVersion: '>=1.22.0-0'
+    name: rancher-logging
+    sources:
+    - https://github.com/kube-logging/logging-operator
+    - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-operator
+    type: application
+    urls:
+    - assets/rancher-logging/rancher-logging-106.0.0+up4.10.0-rancher.1.tgz
+    version: 106.0.0+up4.10.0-rancher.1
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-logging-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/deploys-on-os: windows
+      catalog.cattle.io/display-name: Logging
       catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
       catalog.cattle.io/namespace: cattle-logging-system
       catalog.cattle.io/permits-os: linux,windows
@@ -18235,6 +18441,20 @@ entries:
       catalog.cattle.io/namespace: cattle-logging-system
       catalog.cattle.io/release-name: rancher-logging-crd
     apiVersion: v1
+    created: "2025-03-24T13:56:27.869370136-03:00"
+    description: Installs the CRDs for rancher-logging.
+    digest: 36367d71a09f2f9ff13adbf8dd0fb29a8ab162f7d71384806496f74b1dc93967
+    name: rancher-logging-crd
+    type: application
+    urls:
+    - assets/rancher-logging-crd/rancher-logging-crd-106.0.0+up4.10.0-rancher.1.tgz
+    version: 106.0.0+up4.10.0-rancher.1
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/release-name: rancher-logging-crd
+    apiVersion: v1
     created: "2025-03-02T13:10:41.881206669-03:00"
     description: Installs the CRDs for rancher-logging.
     digest: 36eb429b1c9fc57223b83d00dd7f05caf26d9566d86001c2fb7de3a90ccad59e
@@ -18496,6 +18716,158 @@ entries:
     - assets/rancher-logging-crd/rancher-logging-crd-101.0.0+up3.17.7.tgz
     version: 101.0.0+up3.17.7
   rancher-monitoring:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+      catalog.cattle.io/auto-install: rancher-monitoring-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/deploys-on-os: windows
+      catalog.cattle.io/display-name: Monitoring
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-monitoring-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: monitoring.coreos.com.prometheus/v1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-monitoring
+      catalog.cattle.io/requests-cpu: 4500m
+      catalog.cattle.io/requests-memory: 4000Mi
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: monitoring
+      catalog.cattle.io/upstream-version: 66.7.1
+    apiVersion: v2
+    appVersion: v0.79.0
+    created: "2025-03-24T13:55:39.195106872-03:00"
+    dependencies:
+    - condition: grafana.enabled
+      name: grafana
+      repository: file://./charts/grafana
+      version: 7.3.11
+    - condition: hardenedKubelet.enabled
+      name: hardenedKubelet
+      repository: file://./charts/hardenedKubelet
+      version: 0.2.0
+    - condition: hardenedNodeExporter.enabled
+      name: hardenedNodeExporter
+      repository: file://./charts/hardenedNodeExporter
+      version: 0.2.0
+    - condition: k3sServer.enabled
+      name: k3sServer
+      repository: file://./charts/k3sServer
+      version: 0.2.0
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: file://./charts/kube-state-metrics
+      version: 5.27.1
+    - condition: kubeAdmControllerManager.enabled
+      name: kubeAdmControllerManager
+      repository: file://./charts/kubeAdmControllerManager
+      version: 0.2.0
+    - condition: kubeAdmEtcd.enabled
+      name: kubeAdmEtcd
+      repository: file://./charts/kubeAdmEtcd
+      version: 0.2.0
+    - condition: kubeAdmProxy.enabled
+      name: kubeAdmProxy
+      repository: file://./charts/kubeAdmProxy
+      version: 0.2.0
+    - condition: kubeAdmScheduler.enabled
+      name: kubeAdmScheduler
+      repository: file://./charts/kubeAdmScheduler
+      version: 0.2.0
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: file://./charts/prometheus-adapter
+      version: 4.11.0
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: file://./charts/prometheus-node-exporter
+      version: 4.41.0
+    - condition: rke2ControllerManager.enabled
+      name: rke2ControllerManager
+      repository: file://./charts/rke2ControllerManager
+      version: 0.2.0
+    - condition: rke2Etcd.enabled
+      name: rke2Etcd
+      repository: file://./charts/rke2Etcd
+      version: 0.2.0
+    - condition: rke2IngressNginx.enabled
+      name: rke2IngressNginx
+      repository: file://./charts/rke2IngressNginx
+      version: 0.2.0
+    - condition: rke2Proxy.enabled
+      name: rke2Proxy
+      repository: file://./charts/rke2Proxy
+      version: 0.2.0
+    - condition: rke2Scheduler.enabled
+      name: rke2Scheduler
+      repository: file://./charts/rke2Scheduler
+      version: 0.2.0
+    - condition: rkeControllerManager.enabled
+      name: rkeControllerManager
+      repository: file://./charts/rkeControllerManager
+      version: 0.2.0
+    - condition: rkeEtcd.enabled
+      name: rkeEtcd
+      repository: file://./charts/rkeEtcd
+      version: 0.2.0
+    - condition: rkeIngressNginx.enabled
+      name: rkeIngressNginx
+      repository: file://./charts/rkeIngressNginx
+      version: 0.2.0
+    - condition: rkeProxy.enabled
+      name: rkeProxy
+      repository: file://./charts/rkeProxy
+      version: 0.2.0
+    - condition: rkeScheduler.enabled
+      name: rkeScheduler
+      repository: file://./charts/rkeScheduler
+      version: 0.2.0
+    - condition: windowsExporter.enabled
+      name: windowsExporter
+      repository: file://./charts/windowsExporter
+      version: 0.7.1
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: 3dd693e9001a368ebf09f1c9601bcb82d2abb3014d9fa5f678cbb1f07868f469
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: file://assets/logos/rancher-monitoring.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: andrew@quadcorps.co.uk
+      name: andrewgkew
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: kube-prometheus-stack@sisti.pt
+      name: GMartinez-Sisti
+    - email: github@jkroepke.de
+      name: jkroepke
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: quentin.bisson@gmail.com
+      name: QuentinBisson
+    name: rancher-monitoring
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - assets/rancher-monitoring/rancher-monitoring-106.0.0+up66.7.1-rancher.2.tgz
+    version: 106.0.0+up66.7.1-rancher.2
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -21789,6 +22161,20 @@ entries:
     - assets/rancher-monitoring/rancher-monitoring-101.0.0+up19.0.3.tgz
     version: 101.0.0+up19.0.3
   rancher-monitoring-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-monitoring-system
+      catalog.cattle.io/release-name: rancher-monitoring-crd
+    apiVersion: v2
+    created: "2025-03-24T13:55:51.581542023-03:00"
+    description: Installs the CRDs for rancher-monitoring.
+    digest: 65ff38d4e91d3aaaff32a8dcd42acf05f1148e3ed8642adb4eb56b234f4a5fee
+    name: rancher-monitoring-crd
+    type: application
+    urls:
+    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.0+up66.7.1-rancher.2.tgz
+    version: 106.0.0+up66.7.1-rancher.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"

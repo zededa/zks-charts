@@ -23,8 +23,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/backup-restore-operator'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v7.0.0
 - source: docker.io/rancher/cis-operator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/cis-operator'
   type: repository
@@ -147,6 +147,12 @@ sync:
       - "*"
 - source: docker.io/rancher/kubectl
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/kubectl'
+  type: repository
+  tags:
+    deny:
+      - "*"
+- source: docker.io/rancher/kuberlr-kubectl
+  target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/kuberlr-kubectl'
   type: repository
   tags:
     deny:
@@ -705,6 +711,12 @@ sync:
       - "*"
 - source: docker.io/rancher/neuvector-updater
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/neuvector-updater'
+  type: repository
+  tags:
+    deny:
+      - "*"
+- source: docker.io/rancher/prom-prometheus
+  target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/prom-prometheus'
   type: repository
   tags:
     deny:
