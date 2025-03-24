@@ -1,22 +1,18 @@
-fleet:
-  - 105.0.5+up0.11.5
-fleet-agent:
-  - 105.0.5+up0.11.5
-fleet-crd:
-  - 105.0.5+up0.11.5
-rancher-aks-operator:
-  - 105.3.0+up1.10.3
-rancher-aks-operator-crd:
-  - 105.3.0+up1.10.3
-rancher-cis-benchmark:
-  - 105.4.0+up7.4.0
-rancher-cis-benchmark-crd:
-  - 105.4.0+up7.4.0
-rancher-eks-operator:
-  - 105.3.0+up1.10.3
-rancher-eks-operator-crd:
-  - 105.3.0+up1.10.3
-rancher-gke-operator:
-  - 105.3.0+up1.10.3
-rancher-gke-operator-crd:
-  - 105.3.0+up1.10.3
+longhorn:
+  - 105.2.0+up1.8.1
+longhorn-crd:
+  - 105.2.0+up1.8.1
+neuvector:
+  - 105.0.2+up2.8.5
+neuvector-crd:
+  - 105.0.2+up2.8.5
+neuvector-monitor:
+  - 105.0.2+up2.8.5
+rancher-backup:
+  - 105.0.1+up6.0.1
+rancher-backup-crd:
+  - 105.0.1+up6.0.1
+rancher-logging:
+  - 105.2.2+up4.10.0-rancher.1
+rancher-logging-crd:
+  - 105.2.2+up4.10.0-rancher.1
