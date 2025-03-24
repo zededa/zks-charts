@@ -4048,6 +4048,49 @@ entries:
       catalog.cattle.io/auto-install: longhorn-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Longhorn
+      catalog.cattle.io/kube-version: '>= 1.25.0-0'
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: longhorn.io/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: longhorn
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: v1.8.1
+    apiVersion: v1
+    appVersion: v1.8.1
+    created: "2025-03-24T16:57:42.999964663-03:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 2240cac25d66ace80dd4aadb2e02ec3c04177a5f1229b0ba913a05c6575558db
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - assets/longhorn/longhorn-104.3.0+up1.8.1.tgz
+    version: 104.3.0+up1.8.1
+  - annotations:
+      catalog.cattle.io/auto-install: longhorn-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Longhorn
       catalog.cattle.io/kube-version: '>= 1.21.0-0'
       catalog.cattle.io/namespace: longhorn-system
       catalog.cattle.io/permits-os: linux,windows
@@ -5728,6 +5771,20 @@ entries:
       catalog.cattle.io/namespace: longhorn-system
       catalog.cattle.io/release-name: longhorn-crd
     apiVersion: v1
+    appVersion: v1.8.1
+    created: "2025-03-24T16:57:53.665227689-03:00"
+    description: Installs the CRDs for longhorn.
+    digest: d5887751b61f446d3d36652676e84af7c8c30ccd899e7d2afd2ff8df6f44a848
+    name: longhorn-crd
+    urls:
+    - assets/longhorn-crd/longhorn-crd-104.3.0+up1.8.1.tgz
+    version: 104.3.0+up1.8.1
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/release-name: longhorn-crd
+    apiVersion: v1
     appVersion: v1.7.3
     created: "2025-02-27T15:53:39.725138649-03:00"
     description: Installs the CRDs for longhorn.
@@ -6293,6 +6350,37 @@ entries:
     - assets/longhorn-crd/longhorn-crd-101.0.0+up1.2.6.tgz
     version: 101.0.0+up1.2.6
   neuvector:
+  - annotations:
+      catalog.cattle.io/auto-install: neuvector-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: neuvector
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.5
+    apiVersion: v1
+    appVersion: 5.4.3
+    created: "2025-03-24T16:57:10.838950834-03:00"
+    description: Helm feature chart for NeuVector container security platform.
+    digest: eb9b1fdeddc23183e512562ec9c2b05ce380899d5a86b43e8a0f4e9c30258ca8
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector/neuvector-104.0.5+up2.8.5.tgz
+    version: 104.0.5+up2.8.5
   - annotations:
       catalog.cattle.io/auto-install: neuvector-crd=match
       catalog.cattle.io/certified: rancher
@@ -7139,6 +7227,26 @@ entries:
       catalog.cattle.io/namespace: cattle-neuvector-system
       catalog.cattle.io/release-name: neuvector-crd
     apiVersion: v1
+    appVersion: 5.4.3
+    created: "2025-03-24T16:57:32.385049964-03:00"
+    description: Helm chart for NeuVector's CRD services
+    digest: 7870f257ba91a152e7c1538c80b9b0b2c04bc04af9657177ed90c3a4dd5fde81
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-crd
+    type: application
+    urls:
+    - assets/neuvector-crd/neuvector-crd-104.0.5+up2.8.5.tgz
+    version: 104.0.5+up2.8.5
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/release-name: neuvector-crd
+    apiVersion: v1
     appVersion: 5.4.2
     created: "2025-01-23T16:16:20.863065849-03:00"
     description: Helm chart for NeuVector's CRD services
@@ -7674,6 +7782,37 @@ entries:
     - assets/neuvector-crd/neuvector-crd-101.0.0+up2.2.3.tgz
     version: 101.0.0+up2.2.3
   neuvector-monitor:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector Monitor
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: neuvector-monitor
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.8.5
+    apiVersion: v1
+    appVersion: 1.0.2
+    created: "2025-03-24T16:57:21.580567512-03:00"
+    description: Helm feature chart (optional) add-on to NeuVector for monitoring
+      with Prometheus/Grafana.
+    digest: ff07382f20084512d3afd38982c32c0305b7d48584970498a2b2ce4d53e0ed52
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-monitor
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector-monitor/neuvector-monitor-104.0.5+up2.8.5.tgz
+    version: 104.0.5+up2.8.5
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: NeuVector Monitor
@@ -9796,6 +9935,36 @@ entries:
       catalog.cattle.io/scope: management
       catalog.cattle.io/type: cluster-tool
       catalog.cattle.io/ui-component: rancher-backup
+      catalog.cattle.io/upstream-version: 5.0.3
+    apiVersion: v2
+    appVersion: 5.0.3
+    created: "2025-03-24T16:56:49.07297978-03:00"
+    description: Provides ability to back up and restore the Rancher application running
+      on any Kubernetes cluster
+    digest: 3578a73c955bc307c8605e92ce9aa7c2a3d29eea26f8d911af2927813a26461c
+    icon: https://charts.rancher.io/assets/logos/backup-restore.svg
+    keywords:
+    - applications
+    - infrastructure
+    kubeVersion: '>= 1.23.0-0'
+    name: rancher-backup
+    urls:
+    - assets/rancher-backup/rancher-backup-104.0.3+up5.0.3.tgz
+    version: 104.0.3+up5.0.3
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-backup-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Rancher Backups
+      catalog.cattle.io/kube-version: '>= 1.23.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: resources.cattle.io.resourceset/v1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: rancher-backup
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: rancher-backup
       catalog.cattle.io/upstream-version: 5.0.2
     apiVersion: v2
     appVersion: 5.0.2
@@ -10610,6 +10779,21 @@ entries:
     - assets/rancher-backup/rancher-backup-1.0.200.tgz
     version: 1.0.200
   rancher-backup-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/release-name: rancher-backup-crd
+    apiVersion: v2
+    appVersion: 5.0.3
+    created: "2025-03-24T16:57:00.216001663-03:00"
+    description: Installs the CRDs for rancher-backup.
+    digest: 370cdbef0d97e75fef35a0807ffa1d738556240db6202e759f0f0c8edd2a0cd4
+    name: rancher-backup-crd
+    type: application
+    urls:
+    - assets/rancher-backup-crd/rancher-backup-crd-104.0.3+up5.0.3.tgz
+    version: 104.0.3+up5.0.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -15704,6 +15888,40 @@ entries:
       catalog.cattle.io/upstream-version: 4.8.0
     apiVersion: v2
     appVersion: 4.8.0
+    created: "2025-03-24T16:56:27.477843931-03:00"
+    description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
+    digest: 26940230dbae8574756baa15e1c0d9867a013f8fff6beb0a633d9d93cf35cc73
+    home: https://kube-logging.github.io
+    icon: file://assets/logos/rancher-logging.svg
+    keywords:
+    - logging
+    - fluentd
+    - fluentbit
+    kubeVersion: '>=1.26.0-0'
+    name: rancher-logging
+    sources:
+    - https://github.com/kube-logging/logging-operator
+    - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-operator
+    type: application
+    urls:
+    - assets/rancher-logging/rancher-logging-104.2.1+up4.8.0.tgz
+    version: 104.2.1+up4.8.0
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-logging-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/deploys-on-os: windows
+      catalog.cattle.io/display-name: Logging
+      catalog.cattle.io/kube-version: '>= 1.26.0-0 < 1.31.0-0'
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: logging.banzaicloud.io.clusterflow/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: rancher-logging
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: logging
+      catalog.cattle.io/upstream-version: 4.8.0
+    apiVersion: v2
+    appVersion: 4.8.0
     created: "2025-02-25T16:02:23.770490821-03:00"
     description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
     digest: 9b219e92bbc62100799e7e14980de4ed486385b72550a4b7cea8b5f2d4b003ea
@@ -16164,6 +16382,20 @@ entries:
     - assets/rancher-logging/rancher-logging-101.0.0+up3.17.7.tgz
     version: 101.0.0+up3.17.7
   rancher-logging-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/release-name: rancher-logging-crd
+    apiVersion: v1
+    created: "2025-03-24T16:56:38.338800357-03:00"
+    description: Installs the CRDs for rancher-logging.
+    digest: c0d3720e28665efc9b530f68efdf927b6f1579ed8f23db685d80bcadb3d1baaa
+    name: rancher-logging-crd
+    type: application
+    urls:
+    - assets/rancher-logging-crd/rancher-logging-crd-104.2.1+up4.8.0.tgz
+    version: 104.2.1+up4.8.0
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"

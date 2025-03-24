@@ -23,8 +23,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/backup-restore-operator'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v5.0.3
 - source: docker.io/rancher/cis-operator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/cis-operator'
   type: repository
@@ -41,14 +41,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet'
   type: repository
   tags:
-    allow:
-    - v0.10.10
+    deny:
+      - "*"
 - source: docker.io/rancher/fleet-agent
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet-agent'
   type: repository
   tags:
-    allow:
-    - v0.10.10
+    deny:
+      - "*"
 - source: docker.io/rancher/fluent-bit
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fluent-bit'
   type: repository
@@ -149,8 +149,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/kubectl'
   type: repository
   tags:
-    allow:
-    - v1.29.14
+    deny:
+      - "*"
+- source: docker.io/rancher/kuberlr-kubectl
+  target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/kuberlr-kubectl'
+  type: repository
+  tags:
+    deny:
+      - "*"
 - source: docker.io/rancher/mirrored-amazon-aws-cli
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-amazon-aws-cli'
   type: repository
