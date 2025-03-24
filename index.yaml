@@ -18643,17 +18643,17 @@ entries:
       catalog.cattle.io/release-name: rancher-gke-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
-    appVersion: 1.9.7-rc.1
-    created: "2025-03-07T14:33:21.506004+05:30"
+    appVersion: 1.9.7
+    created: "2025-03-21T12:27:02.257301223+05:30"
     description: A Helm chart for provisioning GKE clusters
-    digest: df4c64476451a31c3ab3e8c49f0ac93cfaed130f4a21a3d2082f069fe8d90e05
+    digest: 2ed1634837f9911e1c173050c5a6e87f029c1100478ac3b9ad20c013b0eced1e
     home: https://github.com/rancher/gke-operator
     name: rancher-gke-operator
     sources:
     - https://github.com/rancher/gke-operator
     urls:
-    - assets/rancher-gke-operator/rancher-gke-operator-104.7.0+up1.9.7-rc.1.tgz
-    version: 104.7.0+up1.9.7-rc.1
+    - assets/rancher-gke-operator/rancher-gke-operator-104.7.0+up1.9.7.tgz
+    version: 104.7.0+up1.9.7
   - annotations:
       catalog.cattle.io/auto-install: rancher-gke-operator-crd=match
       catalog.cattle.io/certified: rancher
@@ -19261,14 +19261,14 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: rancher-gke-operator-crd
     apiVersion: v2
-    appVersion: 1.9.7-rc.1
-    created: "2025-03-07T14:33:23.062974+05:30"
+    appVersion: 1.9.7
+    created: "2025-03-21T12:27:12.948481814+05:30"
     description: GKE Operator CustomResourceDefinitions
-    digest: 01b62c66b100dcd9a7c0cc9ec5ecb26856d0c074eac1c73dfa4835e53303e659
+    digest: 485b63eedec3259c0195665d99a220b93b4d36c6dce951ff856917902b80a014
     name: rancher-gke-operator-crd
     urls:
-    - assets/rancher-gke-operator-crd/rancher-gke-operator-crd-104.7.0+up1.9.7-rc.1.tgz
-    version: 104.7.0+up1.9.7-rc.1
+    - assets/rancher-gke-operator-crd/rancher-gke-operator-crd-104.7.0+up1.9.7.tgz
+    version: 104.7.0+up1.9.7
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
