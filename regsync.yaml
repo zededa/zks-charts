@@ -41,14 +41,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.10.10
 - source: docker.io/rancher/fleet-agent
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet-agent'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.10.10
 - source: docker.io/rancher/fluent-bit
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fluent-bit'
   type: repository
@@ -149,8 +149,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/kubectl'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v1.29.14
 - source: docker.io/rancher/mirrored-amazon-aws-cli
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-amazon-aws-cli'
   type: repository
