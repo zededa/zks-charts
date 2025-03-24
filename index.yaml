@@ -14540,17 +14540,17 @@ entries:
       catalog.cattle.io/release-name: rancher-eks-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
-    appVersion: 1.11.0-rc.4
-    created: "2025-03-07T13:06:26.491395+05:30"
+    appVersion: 1.11.0
+    created: "2025-03-21T11:57:25.512140286+05:30"
     description: A Helm chart for provisioning EKS clusters
-    digest: 9b49a223db0b701d6d0b47c4ee40d523ae01233daacd6aaa641dab36bb854fd8
+    digest: e910c9bbee670b11d3ff715ca69396569473b0a23007d5f6c8c9b17d29f66ec1
     home: https://github.com/rancher/eks-operator
     name: rancher-eks-operator
     sources:
     - https://github.com/rancher/eks-operator
     urls:
-    - assets/rancher-eks-operator/rancher-eks-operator-106.0.0+up1.11.0-rc.4.tgz
-    version: 106.0.0+up1.11.0-rc.4
+    - assets/rancher-eks-operator/rancher-eks-operator-106.0.0+up1.11.0.tgz
+    version: 106.0.0+up1.11.0
   - annotations:
       catalog.cattle.io/auto-install: rancher-eks-operator-crd=match
       catalog.cattle.io/certified: rancher
@@ -15232,14 +15232,14 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: rancher-eks-operator-crd
     apiVersion: v2
-    appVersion: 1.11.0-rc.4
-    created: "2025-03-07T13:06:27.867779+05:30"
+    appVersion: 1.11.0
+    created: "2025-03-21T11:57:32.720390586+05:30"
     description: EKS Operator CustomResourceDefinitions
-    digest: 5669e823df4b29ae0305208031cc13211bbeccbf15feaaeccb2da069d5ded365
+    digest: cded5c26ba462ba75337a7dcba633e43f485b625a7d28492af68f36ecae21fea
     name: rancher-eks-operator-crd
     urls:
-    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-106.0.0+up1.11.0-rc.4.tgz
-    version: 106.0.0+up1.11.0-rc.4
+    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-106.0.0+up1.11.0.tgz
+    version: 106.0.0+up1.11.0
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
