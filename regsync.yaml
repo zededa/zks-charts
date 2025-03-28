@@ -23,8 +23,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/backup-restore-operator'
   type: repository
   tags:
-    allow:
-    - v5.0.3
+    deny:
+      - "*"
 - source: docker.io/rancher/cis-operator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/cis-operator'
   type: repository
@@ -731,8 +731,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rancher-webhook'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.5.8
 - source: docker.io/rancher/security-scan
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/security-scan'
   type: repository
