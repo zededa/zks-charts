@@ -20610,7 +20610,7 @@ entries:
       catalog.cattle.io/upstream-version: 66.7.1
     apiVersion: v2
     appVersion: v0.79.0
-    created: "2025-04-04T17:39:41.15578-04:00"
+    created: "2025-04-07T12:55:14.786546-04:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -20651,11 +20651,11 @@ entries:
     - condition: prometheus-adapter.enabled
       name: prometheus-adapter
       repository: file://./charts/prometheus-adapter
-      version: 4.11.0
+      version: 4.12.0
     - condition: nodeExporter.enabled
       name: prometheus-node-exporter
       repository: file://./charts/prometheus-node-exporter
-      version: 4.41.0
+      version: 4.42.0
     - condition: rke2ControllerManager.enabled
       name: rke2ControllerManager
       repository: file://./charts/rke2ControllerManager
@@ -20704,7 +20704,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 12e426c74929f8586704438913eb6706bfb205a0d5d07a7ac82a179f3d7914b8
+    digest: 06e10ee96ca449fc4f32648e60805741ffc2446e8d04a304a38aa8f45d856dd9
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
@@ -20735,8 +20735,8 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - assets/rancher-monitoring/rancher-monitoring-106.0.1-rc.1+up66.7.1-rancher.6.tgz
-    version: 106.0.1-rc.1+up66.7.1-rancher.6
+    - assets/rancher-monitoring/rancher-monitoring-106.0.1-rc.1+up66.7.1-rancher.8.tgz
+    version: 106.0.1-rc.1+up66.7.1-rancher.8
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -24188,14 +24188,14 @@ entries:
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/release-name: rancher-monitoring-crd
     apiVersion: v2
-    created: "2025-04-04T17:39:41.257352-04:00"
+    created: "2025-04-07T12:55:14.875978-04:00"
     description: Installs the CRDs for rancher-monitoring.
-    digest: 8117d24cadef8100e69fb82a2c8d97d97697bf21c9657e844a60e5f8a83f3130
+    digest: 4eb640204b47d095be40737bf4d7752073b316e41d6d08fb4fc6546f9f5aabe0
     name: rancher-monitoring-crd
     type: application
     urls:
-    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.1-rc.1+up66.7.1-rancher.6.tgz
-    version: 106.0.1-rc.1+up66.7.1-rancher.6
+    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.1-rc.1+up66.7.1-rancher.8.tgz
+    version: 106.0.1-rc.1+up66.7.1-rancher.8
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
