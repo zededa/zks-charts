@@ -1,8 +1,10 @@
-state.json
 logs/*
 bin
 *.DS_Store
 .idea
 .charts-build-scripts
 *.swp
-config/bump.json
+.vscode
+*.log
+config/bump_version.json
+config/state.json
