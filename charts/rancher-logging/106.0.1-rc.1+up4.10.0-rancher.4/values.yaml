@@ -365,8 +365,6 @@ global:
     # set the value below to "false".
     # windows:
     #   enabled: true
-    psp:
-      enabled: false
 
   # Change the "dockerRootDirectory" if the default Docker directory has changed.
   dockerRootDirectory: ""
@@ -462,10 +460,10 @@ fluentbit:
   resources: {}
   tolerations:
     - key: node-role.kubernetes.io/control-plane
-      value: "true"
+      operator: Exists
       effect: NoSchedule
     - key: node-role.kubernetes.io/etcd
-      value: "true"
+      operator: Exists
       effect: NoExecute
   filterKubernetes:
     Merge_Log: ""
