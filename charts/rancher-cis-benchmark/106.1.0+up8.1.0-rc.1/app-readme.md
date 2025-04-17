@@ -1,12 +1,12 @@
 
 # Rancher Cluster Compliance Scanner
 
-This chart enables security scanning of the cluster using security profiles aligned with [CIS (Center for Internet Security) Benchmark®](https://www.cisecurity.org/benchmark/kubernetes/) recommendations.
+This chart enables security scanning of the cluster using security profiles aligned with [CIS (Center for Internet Security) Benchmark](https://www.cisecurity.org/benchmark/kubernetes/) recommendations.
 
 For more information on how to use the feature, refer to our [docs](https://ranchermanager.docs.rancher.com/how-to-guides/advanced-user-guides/cis-scan-guides).
 
 > [!NOTE]
-> This tool facilitates assessing cluster configuration against security recommendations derived from CIS Benchmarks®. Please be aware that the use of CIS Benchmarks® for commercial purposes, or claiming official CIS compliance certification, requires appropriate licensing or membership with the Center for Internet Security (CIS®). Users are responsible for ensuring they comply with all applicable CIS terms of use.
+> This tool facilitates assessing cluster configuration against security recommendations derived from CIS Benchmarks. Please be aware that the use of CIS Benchmarks for commercial purposes, or claiming official CIS compliance certification, requires appropriate licensing or membership with the Center for Internet Security (CIS). Users are responsible for ensuring they comply with all applicable CIS terms of use.
 
 This chart installs the following components:
 
