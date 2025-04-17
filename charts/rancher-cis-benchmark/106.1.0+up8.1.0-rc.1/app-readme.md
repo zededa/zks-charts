@@ -1,17 +1,20 @@
 
-# Rancher CIS Benchmarks
+# Rancher Cluster Compliance Scanner
 
-This chart enables security scanning of the cluster using [CIS (Center for Internet Security) benchmarks](https://www.cisecurity.org/benchmark/kubernetes/).
+This chart enables security scanning of the cluster using security profiles aligned with [CIS (Center for Internet Security) Benchmark®](https://www.cisecurity.org/benchmark/kubernetes/) recommendations.
 
 For more information on how to use the feature, refer to our [docs](https://ranchermanager.docs.rancher.com/how-to-guides/advanced-user-guides/cis-scan-guides).
 
+> [!NOTE]
+> This tool facilitates assessing cluster configuration against security recommendations derived from CIS Benchmarks®. Please be aware that the use of CIS Benchmarks® for commercial purposes, or claiming official CIS compliance certification, requires appropriate licensing or membership with the Center for Internet Security (CIS®). Users are responsible for ensuring they comply with all applicable CIS terms of use.
+
 This chart installs the following components:
 
-- [cis-operator](https://github.com/rancher/cis-operator) - The cis-operator handles launching the [kube-bench](https://github.com/aquasecurity/kube-bench) tool that runs a suite of CIS tests on the nodes of your Kubernetes cluster. After scans finish, the cis-operator generates a compliance report that can be downloaded.
-- Scans - A scan is a CRD (`ClusterScan`) that defines when to trigger CIS scans on the cluster based on the defined profile. A report is created after the scan is completed.
-- Profiles - A profile is a CRD (`ClusterScanProfile`) that defines the configuration for the CIS scan, which is the benchmark versions to use and any specific tests to skip in that benchmark. This chart installs a few default `ClusterScanProfile` custom resources with no skipped tests, which can immediately be used to launch CIS scans.
-- Benchmark Versions - A benchmark version is a CRD (`ClusterScanBenchmark`) that defines the CIS benchmark version to run using kube-bench as well as the valid configuration parameters for that benchmark. This chart installs a few default `ClusterScanBenchmark` custom resources.
-- Alerting Resources - Rancher's CIS Benchmark application lets you run a cluster scan on a schedule, and send alerts when scans finish.
+- [cis-operator](https://github.com/rancher/cis-operator) - The cis-operator handles launching the [kube-bench](https://github.com/aquasecurity/kube-bench) tool that runs a suite of tests using security profiles aligned with the CIS Benchmarks on the nodes of your Kubernetes cluster. After scans finish, the cis-operator generates a compliance report that can be downloaded.
+- Scans - A scan is a CRD (`ClusterScan`) that defines when to trigger scans on the cluster based on the defined profile. A report is created after the scan is completed.
+- Profiles - A profile is a CRD (`ClusterScanProfile`) that defines the configuration for the CIS-aligned scan, which is the benchmark versions to use and any specific tests to skip in that benchmark. This chart installs a few default `ClusterScanProfile` custom resources with no skipped tests, which can immediately be used to launch the scans.
+- Benchmark Versions - A benchmark version is a CRD (`ClusterScanBenchmark`) that defines a specific CIS Benchmark publication (e.g., CIS Kubernetes Benchmark v1.23) that scan profiles can reference for alignment to run using kube-bench, as well as the valid configuration parameters for that benchmark. This chart installs a few default `ClusterScanBenchmark` custom resources.
+- Alerting Resources - Rancher's scanning application lets you run a cluster scan on a schedule, and send alerts when scans finish.
     - If you want to enable alerts to be delivered when a cluster scan completes, you need to ensure that [Rancher's Monitoring and Alerting](https://rancher.com/docs/rancher/v2.x/en/monitoring-alerting/v2.5/) application is pre-installed and the [Receivers and Routes](https://rancher.com/docs/rancher/v2.x/en/monitoring-alerting/v2.5/configuration/#alertmanager-config) are configured to send out alerts.
     - Additionally, you need to set `alerts: true` in the Values YAML while installing or upgrading this chart.
 
