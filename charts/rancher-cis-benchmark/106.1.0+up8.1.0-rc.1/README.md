@@ -11,4 +11,4 @@ helm install rancher-cis-benchmark ./ --create-namespace -n cis-operator-systemv
 
 
 > [!NOTE]
-> Please be aware that commercial use of CIS Benchmarks® or claiming official CIS compliance requires membership or licensing from the Center for Internet Security (CIS®). Users are responsible for adhering to CIS terms of use. 
+> Please be aware that commercial use of CIS Benchmarks or claiming official CIS compliance requires membership or licensing from the Center for Internet Security (CIS). Users are responsible for adhering to CIS terms of use. 
