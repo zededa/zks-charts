@@ -11775,7 +11775,7 @@ entries:
       catalog.cattle.io/auto-install: rancher-aks-operator-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.26.0-0 < 1.31.0-0'
+      catalog.cattle.io/kube-version: '>= 1.27.0-0 < 1.31.0-0'
       catalog.cattle.io/namespace: cattle-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux,windows
@@ -11784,17 +11784,17 @@ entries:
       catalog.cattle.io/release-name: rancher-aks-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
-    appVersion: 1.9.8-rc.1
-    created: "2025-04-08T12:56:52.930929453+05:30"
+    appVersion: 1.9.8
+    created: "2025-04-21T18:43:44.923659525+05:30"
     description: A Helm chart for provisioning AKS clusters
-    digest: 43d033128564d9959518dea23efacab47131b12daf650f1a4c4c3c28ef482ec8
+    digest: 05a5c1980749c132a21d83c2378fd4373fb326d0186f43a689ebee6b2b233201
     home: https://github.com/rancher/aks-operator
     name: rancher-aks-operator
     sources:
     - https://github.com/rancher/aks-operator
     urls:
-    - assets/rancher-aks-operator/rancher-aks-operator-104.8.0+up1.9.8-rc.1.tgz
-    version: 104.8.0+up1.9.8-rc.1
+    - assets/rancher-aks-operator/rancher-aks-operator-104.8.0+up1.9.8.tgz
+    version: 104.8.0+up1.9.8
   - annotations:
       catalog.cattle.io/auto-install: rancher-aks-operator-crd=match
       catalog.cattle.io/certified: rancher
@@ -12569,14 +12569,14 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: rancher-aks-operator-crd
     apiVersion: v2
-    appVersion: 1.9.8-rc.1
-    created: "2025-04-08T12:56:58.101355274+05:30"
+    appVersion: 1.9.8
+    created: "2025-04-21T18:44:18.456071246+05:30"
     description: AKS Operator CustomResourceDefinitions
-    digest: 3f191022dc32b73178f97f2cf802ac997c6777743026f0247a041b103cddef35
+    digest: 9599f68b109790073c48363bee94fd31b442b57133975ae86173fb40010effc8
     name: rancher-aks-operator-crd
     urls:
-    - assets/rancher-aks-operator-crd/rancher-aks-operator-crd-104.8.0+up1.9.8-rc.1.tgz
-    version: 104.8.0+up1.9.8-rc.1
+    - assets/rancher-aks-operator-crd/rancher-aks-operator-crd-104.8.0+up1.9.8.tgz
+    version: 104.8.0+up1.9.8
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
