@@ -16664,7 +16664,7 @@ entries:
       catalog.cattle.io/auto-install: rancher-eks-operator-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.26.0-0 < 1.31.0-0'
+      catalog.cattle.io/kube-version: '>= 1.27.0-0 < 1.31.0-0'
       catalog.cattle.io/namespace: cattle-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux,windows
@@ -16673,17 +16673,17 @@ entries:
       catalog.cattle.io/release-name: rancher-eks-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
-    appVersion: 1.9.8-rc.1
-    created: "2025-04-08T14:11:00.87429696+05:30"
+    appVersion: 1.9.8
+    created: "2025-04-21T19:02:28.681094643+05:30"
     description: A Helm chart for provisioning EKS clusters
-    digest: 1c442c35c3fcef1f02a8964b366e3c08c62baed0ca0bd62065300ec30303f752
+    digest: 2b8b8fd05a4758016663e626b30ea78973e7f553f35656b3066755a847dac956
     home: https://github.com/rancher/eks-operator
     name: rancher-eks-operator
     sources:
     - https://github.com/rancher/eks-operator
     urls:
-    - assets/rancher-eks-operator/rancher-eks-operator-104.8.0+up1.9.8-rc.1.tgz
-    version: 104.8.0+up1.9.8-rc.1
+    - assets/rancher-eks-operator/rancher-eks-operator-104.8.0+up1.9.8.tgz
+    version: 104.8.0+up1.9.8
   - annotations:
       catalog.cattle.io/auto-install: rancher-eks-operator-crd=match
       catalog.cattle.io/certified: rancher
@@ -17435,14 +17435,14 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: rancher-eks-operator-crd
     apiVersion: v2
-    appVersion: 1.9.8-rc.1
-    created: "2025-04-08T14:11:05.441482949+05:30"
+    appVersion: 1.9.8
+    created: "2025-04-21T19:02:35.936775906+05:30"
     description: EKS Operator CustomResourceDefinitions
-    digest: 67451621c34b351e59e53aa5103adf855cddea96cbd3318c9343d7e4c401d117
+    digest: 9b402b90907ebdd10a8785af941dbcf4d3515b5c49617f2a5b1502ad5f68eb65
     name: rancher-eks-operator-crd
     urls:
-    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-104.8.0+up1.9.8-rc.1.tgz
-    version: 104.8.0+up1.9.8-rc.1
+    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-104.8.0+up1.9.8.tgz
+    version: 104.8.0+up1.9.8
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
