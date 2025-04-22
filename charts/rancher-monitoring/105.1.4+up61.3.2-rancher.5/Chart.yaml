@@ -145,4 +145,4 @@ sources:
 - https://github.com/prometheus-community/helm-charts
 - https://github.com/prometheus-operator/kube-prometheus
 type: application
-version: 105.1.4-rc.1+up61.3.2-rancher.5
+version: 105.1.4+up61.3.2-rancher.5
