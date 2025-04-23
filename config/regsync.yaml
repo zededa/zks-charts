@@ -23,8 +23,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/backup-restore-operator'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v7.0.1
 - source: docker.io/rancher/cis-operator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/cis-operator'
   type: repository
@@ -137,8 +137,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/istio-installer'
   type: repository
   tags:
-    allow:
-    - 1.25.0-rancher1
+    deny:
+      - "*"
 - source: docker.io/rancher/klipper-helm
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/klipper-helm'
   type: repository
@@ -293,26 +293,26 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-istio-install-cni'
   type: repository
   tags:
-    allow:
-    - 1.25.0-distroless
+    deny:
+      - "*"
 - source: docker.io/rancher/mirrored-istio-pilot
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-istio-pilot'
   type: repository
   tags:
-    allow:
-    - 1.25.0-distroless
+    deny:
+      - "*"
 - source: docker.io/rancher/mirrored-istio-proxyv2
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-istio-proxyv2'
   type: repository
   tags:
-    allow:
-    - 1.25.0-distroless
+    deny:
+      - "*"
 - source: docker.io/rancher/mirrored-jaegertracing-all-in-one
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-jaegertracing-all-in-one'
   type: repository
   tags:
-    allow:
-    - 1.67.0
+    deny:
+      - "*"
 - source: docker.io/rancher/mirrored-jimmidyson-configmap-reload
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-jimmidyson-configmap-reload'
   type: repository
@@ -323,14 +323,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-kiali-kiali'
   type: repository
   tags:
-    allow:
-    - v2.7.1
+    deny:
+      - "*"
 - source: docker.io/rancher/mirrored-kiwigrid-k8s-sidecar
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-kiwigrid-k8s-sidecar'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - 1.28.0
 - source: docker.io/rancher/mirrored-kube-logging-config-reloader
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-kube-logging-config-reloader'
   type: repository
@@ -725,8 +725,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/prometheus-federator'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v3.0.1
 - source: docker.io/rancher/pushprox-client
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/pushprox-client'
   type: repository
@@ -749,8 +749,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rancher-webhook'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.7.1
 - source: docker.io/rancher/remotedialer-proxy
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/remotedialer-proxy'
   type: repository
