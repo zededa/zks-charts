@@ -10199,11 +10199,11 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
       catalog.cattle.io/release-name: prometheus-federator
     apiVersion: v2
-    appVersion: v3.0.1-rc.4
-    created: "2025-04-22T10:00:09.157367-04:00"
+    appVersion: v3.0.1
+    created: "2025-04-23T08:54:47.528413-04:00"
     description: Prometheus Federator - installs rancher-project-monitoring in project
       namespaces.
-    digest: af595c399dec9da7efeb9d77654054896c4048a7ca2011b2ebdeefe774512d55
+    digest: 5b64c610ba3ec247d7a8bdaf3e1d286d0b53f1161a0c28c47ed5bc66495f884a
     icon: https://raw.githubusercontent.com/rancher/prometheus-federator/main/assets/logos/prometheus-federator.svg
     keywords:
     - prometheus
@@ -10218,8 +10218,8 @@ entries:
       name: Julia
     name: prometheus-federator
     urls:
-    - assets/prometheus-federator/prometheus-federator-106.0.1-rc.3+up3.0.1-rc.4.tgz
-    version: 106.0.1-rc.3+up3.0.1-rc.4
+    - assets/prometheus-federator/prometheus-federator-106.0.1+up3.0.1.tgz
+    version: 106.0.1+up3.0.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Prometheus Federator
@@ -20748,7 +20748,7 @@ entries:
       catalog.cattle.io/upstream-version: 66.7.1
     apiVersion: v2
     appVersion: v0.79.0
-    created: "2025-04-22T09:57:08.669074-04:00"
+    created: "2025-04-23T08:55:16.208457-04:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -20842,7 +20842,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 6a8c20b54540dde79b4aba3b0ef0c85dbe0b5c7b7780015d4758936649be0e89
+    digest: da9e6f37e6842909ef2785aacd0251d9d3b4553d1a306df6dafb3b3a7fb112cb
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
@@ -20873,8 +20873,8 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - assets/rancher-monitoring/rancher-monitoring-106.0.1-rc.2+up66.7.1-rancher.10.tgz
-    version: 106.0.1-rc.2+up66.7.1-rancher.10
+    - assets/rancher-monitoring/rancher-monitoring-106.0.1+up66.7.1-rancher.10.tgz
+    version: 106.0.1+up66.7.1-rancher.10
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -24326,14 +24326,14 @@ entries:
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/release-name: rancher-monitoring-crd
     apiVersion: v2
-    created: "2025-04-22T09:57:08.756605-04:00"
+    created: "2025-04-23T08:55:16.293609-04:00"
     description: Installs the CRDs for rancher-monitoring.
-    digest: 1b6e7669c2a42a5496b6294a4a7d663c76a1720d0c50641ce34efa16d71c3a51
+    digest: fb1773bbd0fdcd8e8349519bbcef6a4efecb3f06ea7f1e1f6f910539dc731dd1
     name: rancher-monitoring-crd
     type: application
     urls:
-    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.1-rc.2+up66.7.1-rancher.10.tgz
-    version: 106.0.1-rc.2+up66.7.1-rancher.10
+    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.0.1+up66.7.1-rancher.10.tgz
+    version: 106.0.1+up66.7.1-rancher.10
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
