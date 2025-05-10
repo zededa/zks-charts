@@ -12014,11 +12014,11 @@ entries:
       catalog.cattle.io/upstream-version: 6.0.2
     apiVersion: v2
     appVersion: 6.0.2
-    created: "2025-04-22T15:07:46.398230734-06:00"
+    created: "2025-05-09T20:46:21.751204-03:00"
     description: Provides ability to back up and restore the Rancher application running
       on any Kubernetes cluster
-    digest: 3eda85dd394a3fc82dc74b27f575e5d2b4c83a7ff3b2be4656207ec7b7486053
-    icon: https://charts.rancher.io/assets/logos/backup-restore.svg
+    digest: 58b39c796254b74c7f73bc6524090e9014ddb7b37353f1571ee70bd1459f5c26
+    icon: file://assets/logos/rancher-backup.svg
     keywords:
     - applications
     - infrastructure
@@ -19219,6 +19219,40 @@ entries:
       catalog.cattle.io/upstream-version: 4.10.0
     apiVersion: v2
     appVersion: 4.10.0
+    created: "2025-05-09T18:44:05.188318-03:00"
+    description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
+    digest: b6a3d5d887170a2c9171fcfe16738e880fc392bf57aaac8063d1d65b47b1bb02
+    home: https://kube-logging.github.io
+    icon: file://assets/logos/rancher-logging.svg
+    keywords:
+    - logging
+    - fluentd
+    - fluentbit
+    kubeVersion: '>= 1.28.0-0 < 1.32.0-0'
+    name: rancher-logging
+    sources:
+    - https://github.com/kube-logging/logging-operator
+    - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-operator
+    type: application
+    urls:
+    - assets/rancher-logging/rancher-logging-105.3.0-rc1+up4.10.0-rancher.4.tgz
+    version: 105.3.0-rc1+up4.10.0-rancher.4
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-logging-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/deploys-on-os: windows
+      catalog.cattle.io/display-name: Logging
+      catalog.cattle.io/kube-version: '>= 1.28.0-0 < 1.32.0-0'
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: logging.banzaicloud.io.clusterflow/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
+      catalog.cattle.io/release-name: rancher-logging
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: logging
+      catalog.cattle.io/upstream-version: 4.10.0
+    apiVersion: v2
+    appVersion: 4.10.0
     created: "2025-03-21T14:07:44.042471354-04:00"
     description: Logging operator for Kubernetes based on Fluentd and Fluentbit.
     digest: 05c54ad83724ac3f4958b30e51720ec4ce23058c4baf623115557aefbf04e0e8
@@ -19883,6 +19917,20 @@ entries:
     - assets/rancher-logging/rancher-logging-101.0.0+up3.17.7.tgz
     version: 101.0.0+up3.17.7
   rancher-logging-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-logging-system
+      catalog.cattle.io/release-name: rancher-logging-crd
+    apiVersion: v1
+    created: "2025-05-09T18:44:05.269279-03:00"
+    description: Installs the CRDs for rancher-logging.
+    digest: 24604bf1d55d7014a37857324947ed68fdd4bc968872df541fd8cc2343562c84
+    name: rancher-logging-crd
+    type: application
+    urls:
+    - assets/rancher-logging-crd/rancher-logging-crd-105.3.0-rc1+up4.10.0-rancher.4.tgz
+    version: 105.3.0-rc1+up4.10.0-rancher.4
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
