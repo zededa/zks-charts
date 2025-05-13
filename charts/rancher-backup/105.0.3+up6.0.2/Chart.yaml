@@ -17,10 +17,10 @@ apiVersion: v2
 appVersion: 6.0.2
 description: Provides ability to back up and restore the Rancher application running
   on any Kubernetes cluster
-icon: https://charts.rancher.io/assets/logos/backup-restore.svg
+icon: file://assets/logos/rancher-backup.svg
 keywords:
 - applications
 - infrastructure
 kubeVersion: '>= 1.28.0-0'
 name: rancher-backup
-version: 105.0.2+up6.0.2
+version: 105.0.3+up6.0.2
