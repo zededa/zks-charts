@@ -21655,7 +21655,7 @@ entries:
       catalog.cattle.io/upstream-version: 69.8.2
     apiVersion: v2
     appVersion: v0.80.1
-    created: "2025-05-09T11:42:18.172303831-04:00"
+    created: "2025-05-15T16:31:06.881820508-04:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -21749,7 +21749,7 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: b952d1aa2a4df4aedaa71ee295caa868b221327e1b609145563a50e1209749ba
+    digest: 5ac54f708f7cea550cc13e29c9f96afb0ea25455920a8dea5ea54737636558d6
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: file://assets/logos/rancher-monitoring.png
     keywords:
@@ -21788,8 +21788,8 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - assets/rancher-monitoring/rancher-monitoring-106.1.0-rc.2+up69.8.2-rancher.4.tgz
-    version: 106.1.0-rc.2+up69.8.2-rancher.4
+    - assets/rancher-monitoring/rancher-monitoring-106.1.0+up69.8.2-rancher.4.tgz
+    version: 106.1.0+up69.8.2-rancher.4
   - annotations:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -25545,14 +25545,14 @@ entries:
       catalog.cattle.io/namespace: cattle-monitoring-system
       catalog.cattle.io/release-name: rancher-monitoring-crd
     apiVersion: v2
-    created: "2025-05-09T11:42:18.329380103-04:00"
+    created: "2025-05-15T16:31:06.997275269-04:00"
     description: Installs the CRDs for rancher-monitoring.
-    digest: 54555ef5c0c6b20d9f80a4bde0e409a4f9c11acdea4d0d9c4b38c08ff086d5c9
+    digest: 0cb38e628dfea6f044915637a699f0e9160ee284b3ef3f7d2e9527b2bc9b6b66
     name: rancher-monitoring-crd
     type: application
     urls:
-    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.1.0-rc.2+up69.8.2-rancher.4.tgz
-    version: 106.1.0-rc.2+up69.8.2-rancher.4
+    - assets/rancher-monitoring-crd/rancher-monitoring-crd-106.1.0+up69.8.2-rancher.4.tgz
+    version: 106.1.0+up69.8.2-rancher.4
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
