@@ -41,14 +41,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet'
   type: repository
   tags:
-    allow:
-    - v0.11.8
+    deny:
+      - "*"
 - source: docker.io/rancher/fleet-agent
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet-agent'
   type: repository
   tags:
-    allow:
-    - v0.11.8
+    deny:
+      - "*"
 - source: docker.io/rancher/fluent-bit
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fluent-bit'
   type: repository
@@ -725,8 +725,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/prometheus-federator'
   type: repository
   tags:
-    allow:
-    - v2.0.0
+    deny:
+      - "*"
 - source: docker.io/rancher/pushprox-client
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/pushprox-client'
   type: repository
