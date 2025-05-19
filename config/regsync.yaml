@@ -23,8 +23,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/backup-restore-operator'
   type: repository
   tags:
-    allow:
-    - v7.0.1
+    deny:
+      - "*"
 - source: docker.io/rancher/cis-operator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/cis-operator'
   type: repository
@@ -41,14 +41,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.12.3
 - source: docker.io/rancher/fleet-agent
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet-agent'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.12.3
 - source: docker.io/rancher/fluent-bit
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fluent-bit'
   type: repository
@@ -287,8 +287,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-ingress-nginx-kube-webhook-certgen'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v1.5.1
 - source: docker.io/rancher/mirrored-istio-install-cni
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-istio-install-cni'
   type: repository
@@ -330,7 +330,7 @@ sync:
   type: repository
   tags:
     allow:
-    - 1.28.0
+    - 1.30.0
 - source: docker.io/rancher/mirrored-kube-logging-config-reloader
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-kube-logging-config-reloader'
   type: repository
@@ -359,8 +359,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-kube-state-metrics-kube-state-metrics'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v2.15.0
 - source: docker.io/rancher/mirrored-kube-vip-kube-vip-iptables
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-kube-vip-kube-vip-iptables'
   type: repository
@@ -563,32 +563,32 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-prometheus-alertmanager'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.28.1
 - source: docker.io/rancher/mirrored-prometheus-node-exporter
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-prometheus-node-exporter'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v1.9.0
 - source: docker.io/rancher/mirrored-prometheus-operator-admission-webhook
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-prometheus-operator-admission-webhook'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.80.1
 - source: docker.io/rancher/mirrored-prometheus-operator-prometheus-config-reloader
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-prometheus-operator-prometheus-config-reloader'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.80.1
 - source: docker.io/rancher/mirrored-prometheus-operator-prometheus-operator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-prometheus-operator-prometheus-operator'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.80.1
 - source: docker.io/rancher/mirrored-prometheus-prometheus
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-prometheus-prometheus'
   type: repository
@@ -719,26 +719,26 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/prom-prometheus'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v3.2.1
 - source: docker.io/rancher/prometheus-federator
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/prometheus-federator'
   type: repository
   tags:
     allow:
-    - v3.0.1
+    - v3.2.0
 - source: docker.io/rancher/pushprox-client
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/pushprox-client'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.1.5-rancher2-client
 - source: docker.io/rancher/pushprox-proxy
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/pushprox-proxy'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.1.5-rancher2-proxy
 - source: docker.io/rancher/rancher-csp-adapter
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rancher-csp-adapter'
   type: repository
@@ -749,8 +749,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rancher-webhook'
   type: repository
   tags:
-    allow:
-    - v0.7.1
+    deny:
+      - "*"
 - source: docker.io/rancher/remotedialer-proxy
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/remotedialer-proxy'
   type: repository
