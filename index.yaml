@@ -11224,6 +11224,30 @@ entries:
       catalog.cattle.io/release-name: rancher-aks-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
+    appVersion: 1.11.2
+    created: "2025-05-19T10:22:55.884775337-03:00"
+    description: A Helm chart for provisioning AKS clusters
+    digest: 2ef1f1f2469705496e9fe92f25cb5a17d695800bc718011a00c31ee9ccda4252
+    home: https://github.com/rancher/aks-operator
+    name: rancher-aks-operator
+    sources:
+    - https://github.com/rancher/aks-operator
+    urls:
+    - assets/rancher-aks-operator/rancher-aks-operator-106.2.0+up1.11.2.tgz
+    version: 106.2.0+up1.11.2
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-aks-operator-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: aksclusterconfigs.aks.cattle.io/v1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-aks-operator
+      catalog.cattle.io/scope: management
+    apiVersion: v2
     appVersion: 1.11.1
     created: "2025-04-21T15:31:24.676422472-03:00"
     description: A Helm chart for provisioning AKS clusters
@@ -11980,6 +12004,22 @@ entries:
     - assets/rancher-aks-operator/rancher-aks-operator-101.0.0+up1.0.7.tgz
     version: 101.0.0+up1.0.7
   rancher-aks-operator-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/release-name: rancher-aks-operator-crd
+    apiVersion: v2
+    appVersion: 1.11.2
+    created: "2025-05-19T10:23:09.559260249-03:00"
+    description: AKS Operator CustomResourceDefinitions
+    digest: e6434744f839e853e44a0d04d4c21e343a26d7bac2de5326dfcca51bc9647694
+    name: rancher-aks-operator-crd
+    urls:
+    - assets/rancher-aks-operator-crd/rancher-aks-operator-crd-106.2.0+up1.11.2.tgz
+    version: 106.2.0+up1.11.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -12890,6 +12930,36 @@ entries:
     - assets/rancher-alerting-drivers/rancher-alerting-drivers-101.0.0.tgz
     version: 101.0.0
   rancher-backup:
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-backup-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Rancher Backups
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: resources.cattle.io.resourceset/v1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-backup
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: rancher-backup
+      catalog.cattle.io/upstream-version: 7.0.1
+    apiVersion: v2
+    appVersion: v7.0.1
+    created: "2025-05-19T10:24:17.711291291-03:00"
+    description: Provides ability to back up and restore the Rancher application running
+      on any Kubernetes cluster
+    digest: ae7fcea6dd0cb8fe745e3feec1c14851a7cd0df364419420dbf07e3854166d84
+    icon: file://assets/logos/rancher-backup.svg
+    keywords:
+    - applications
+    - infrastructure
+    kubeVersion: '>= 1.30.0-0'
+    name: rancher-backup
+    urls:
+    - assets/rancher-backup/rancher-backup-106.0.2+up7.0.1.tgz
+    version: 106.0.2+up7.0.1
   - annotations:
       catalog.cattle.io/auto-install: rancher-backup-crd=match
       catalog.cattle.io/certified: rancher
@@ -13898,6 +13968,21 @@ entries:
     - assets/rancher-backup/rancher-backup-1.0.200.tgz
     version: 1.0.200
   rancher-backup-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/release-name: rancher-backup-crd
+    apiVersion: v2
+    appVersion: v7.0.1
+    created: "2025-05-19T10:24:31.381226511-03:00"
+    description: Installs the CRDs for rancher-backup.
+    digest: 275abeb3723829d7ab73ec313a44a99dc944bde7729d6d1e77635e685c4b2194
+    name: rancher-backup-crd
+    type: application
+    urls:
+    - assets/rancher-backup-crd/rancher-backup-crd-106.0.2+up7.0.1.tgz
+    version: 106.0.2+up7.0.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -16209,6 +16294,30 @@ entries:
       catalog.cattle.io/release-name: rancher-eks-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
+    appVersion: 1.11.2
+    created: "2025-05-19T10:23:50.759711593-03:00"
+    description: A Helm chart for provisioning EKS clusters
+    digest: ad4d7bcc594d45fdac05ef512178b42343661357c12174fd73a053732ac8a5d4
+    home: https://github.com/rancher/eks-operator
+    name: rancher-eks-operator
+    sources:
+    - https://github.com/rancher/eks-operator
+    urls:
+    - assets/rancher-eks-operator/rancher-eks-operator-106.2.0+up1.11.2.tgz
+    version: 106.2.0+up1.11.2
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-eks-operator-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/namespace: cattle-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: eksclusterconfigs.eks.cattle.io/v1
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/release-name: rancher-eks-operator
+      catalog.cattle.io/scope: management
+    apiVersion: v2
     appVersion: 1.11.1
     created: "2025-04-21T15:31:53.11718701-03:00"
     description: A Helm chart for provisioning EKS clusters
@@ -17013,6 +17122,22 @@ entries:
     - assets/rancher-eks-operator/rancher-eks-operator-101.0.0+up1.1.5.tgz
     version: 101.0.0+up1.1.5
   rancher-eks-operator-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/release-name: rancher-eks-operator-crd
+    apiVersion: v2
+    appVersion: 1.11.2
+    created: "2025-05-19T10:24:04.196773104-03:00"
+    description: EKS Operator CustomResourceDefinitions
+    digest: 95f2b6a5515a62b2387d4341ff5e8600632e6e3df7b253392ad2f03641706d00
+    name: rancher-eks-operator-crd
+    urls:
+    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-106.2.0+up1.11.2.tgz
+    version: 106.2.0+up1.11.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -17969,6 +18094,30 @@ entries:
       catalog.cattle.io/release-name: rancher-gke-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
+    appVersion: 1.11.2
+    created: "2025-05-19T10:23:23.487625559-03:00"
+    description: A Helm chart for provisioning GKE clusters
+    digest: f6ea8f9d7a106fba177d4b8c396372d505cca0edb877d53b818b9d0a779a357d
+    home: https://github.com/rancher/gke-operator
+    name: rancher-gke-operator
+    sources:
+    - https://github.com/rancher/gke-operator
+    urls:
+    - assets/rancher-gke-operator/rancher-gke-operator-106.2.0+up1.11.2.tgz
+    version: 106.2.0+up1.11.2
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-gke-operator-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 2.11.0-0 < 2.12.0-0'
+      catalog.cattle.io/namespace: cattle-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/provides-gvr: gkeclusterconfigs.gke.cattle.io/v1
+      catalog.cattle.io/rancher-version: '>= 1.30.0-0 < 1.33.0-0'
+      catalog.cattle.io/release-name: rancher-gke-operator
+      catalog.cattle.io/scope: management
+    apiVersion: v2
     appVersion: 1.11.1
     created: "2025-04-21T15:32:24.665785985-03:00"
     description: A Helm chart for provisioning GKE clusters
@@ -18677,6 +18826,22 @@ entries:
     - assets/rancher-gke-operator/rancher-gke-operator-101.0.0+up1.1.5.tgz
     version: 101.0.0+up1.1.5
   rancher-gke-operator-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux,windows
+      catalog.cattle.io/release-name: rancher-gke-operator-crd
+    apiVersion: v2
+    appVersion: 1.11.2
+    created: "2025-05-19T10:23:37.071740062-03:00"
+    description: GKE Operator CustomResourceDefinitions
+    digest: 4fda8ee543b81ec476489c36af83dd2752200ef80f2c3b284bef60b5227b105b
+    name: rancher-gke-operator-crd
+    urls:
+    - assets/rancher-gke-operator-crd/rancher-gke-operator-crd-106.2.0+up1.11.2.tgz
+    version: 106.2.0+up1.11.2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
