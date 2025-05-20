@@ -749,8 +749,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rancher-webhook'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.7.2
 - source: docker.io/rancher/remotedialer-proxy
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/remotedialer-proxy'
   type: repository
