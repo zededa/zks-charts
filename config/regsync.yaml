@@ -41,14 +41,14 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet'
   type: repository
   tags:
-    allow:
-    - v0.10.13
+    deny:
+      - "*"
 - source: docker.io/rancher/fleet-agent
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fleet-agent'
   type: repository
   tags:
-    allow:
-    - v0.10.13
+    deny:
+      - "*"
 - source: docker.io/rancher/fluent-bit
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/fluent-bit'
   type: repository
@@ -731,8 +731,8 @@ sync:
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rancher-webhook'
   type: repository
   tags:
-    deny:
-      - "*"
+    allow:
+    - v0.5.10
 - source: docker.io/rancher/security-scan
   target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/security-scan'
   type: repository
