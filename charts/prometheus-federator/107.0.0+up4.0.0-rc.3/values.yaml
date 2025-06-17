@@ -30,6 +30,11 @@ global:
   imagePullSecrets: []
   # - name: "image-pull-secret"
 
+## Prometheus Federator Specific
+priorityClassName: ""
+
+
+## Start of old helm-project-operator subchart configs
 helmProjectOperator:
   # ensures that all resources created by subchart show up as prometheus-federator
   helmApiVersion: dummy.cattle.io/v1alpha1
@@ -123,7 +128,7 @@ helmProjectOperator:
   image:
     registry: ''
     repository: rancher/prometheus-federator
-    tag: v3.0.1-rc.2
+    tag: v4.0.0-rc.3
     pullPolicy: IfNotPresent
 
   # Configure how the operator will manage the CustomResourceDefinitions (CRDs) it needs to function.
@@ -204,7 +209,7 @@ helmProjectOperator:
   cleanup:
     image:
       repository: rancher/kuberlr-kubectl
-      tag: v4.0.2
+      tag: v5.0.0
       pullPolicy: IfNotPresent
 
     ## Define which Nodes the Pods are scheduled on.
