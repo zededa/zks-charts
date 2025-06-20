@@ -10464,11 +10464,11 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
       catalog.cattle.io/release-name: prometheus-federator
     apiVersion: v2
-    appVersion: v2.0.1-rc.1
-    created: "2025-06-06T15:38:43.608297-04:00"
+    appVersion: v2.0.1
+    created: "2025-06-18T20:53:02.623481-03:00"
     description: Prometheus Federator - installs rancher-project-monitoring in project
       namespaces.
-    digest: a37a9ee24fc49877a4a87a45ad1ccde32363987a7d92b8f985909d5339d703fc
+    digest: 9f0351d105eade9de38631362b6b38c87ae9485d2bd29d2dd42a4a000e2c017e
     icon: file://assets/logos/prometheus-federator.svg
     keywords:
     - prometheus
@@ -10483,8 +10483,8 @@ entries:
       name: Julia
     name: prometheus-federator
     urls:
-    - assets/prometheus-federator/prometheus-federator-105.2.1-rc.1+up2.0.1-rc.1.tgz
-    version: 105.2.1-rc.1+up2.0.1-rc.1
+    - assets/prometheus-federator/prometheus-federator-105.2.1+up2.0.1.tgz
+    version: 105.2.1+up2.0.1
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Prometheus Federator
