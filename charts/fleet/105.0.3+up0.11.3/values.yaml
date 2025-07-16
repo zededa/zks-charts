@@ -120,9 +120,9 @@ agent:
       drift: "50"
 
 # Extra environment variables passed to the fleet pods.
-#extraEnv:
-# - name: my_name
-#   value: "my-value"
+# extraEnv:
+# - name: EXPERIMENTAL_OCI_STORAGE
+#   value: "true"
 
 # shards:
 #   - id: shard0

@@ -39,8 +39,6 @@ spec:
         {{- end }}
       containers:
       - env:
-        - name: VADIM
-          value: "vadim-test"
         - name: NAMESPACE
           valueFrom:
             fieldRef:
