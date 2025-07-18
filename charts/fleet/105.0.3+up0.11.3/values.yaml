@@ -1,12 +1,12 @@
 image:
-  repository: rancher/fleet
-  tag: v0.11.3
-  imagePullPolicy: IfNotPresent
+  repository: zededa/zks-fleet
+  tag: latest
+  imagePullPolicy: Always
 
 agentImage:
-  repository: rancher/fleet-agent
-  tag: v0.11.3
-  imagePullPolicy: IfNotPresent
+  repository: zededa/zks-fleet-agent
+  tag: latest
+  imagePullPolicy: Always
 
 # For cluster registration the public URL of the Kubernetes API server must be set here
 # Example: https://example.com:6443
